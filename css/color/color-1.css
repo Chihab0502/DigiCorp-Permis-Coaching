@@ -1,0 +1,295 @@
+/*-------------------------- 
+	Default
+--------------------------*/
+.section-title i {
+  color: #09008d;
+}
+#scrollUp {
+  background-color: #09008d;
+}
+.object{
+  background-color: #09008d;
+}
+.pagination ul li a:hover {
+  border-color: #09008d;
+  color: #09008d;
+}
+.pagination ul li.active a, .pagination ul li.active a:hover {
+  background-color: #09008d;
+  border-color: #09008d;
+}
+blockquote {
+  border-color: #09008d;
+}
+.sub-title::before {
+  background-color: #09008d;
+}
+/*-------------------------- 
+	Button
+--------------------------*/
+.btn.color {
+  background-color: #09008d;
+  border-color: #09008d;
+}
+.btn.color.transparent {
+  color: #09008d;
+}
+.btn.color:hover {
+  color: #09008d;
+}
+.btn.hover-color:hover {
+  background-color: #09008d;
+  border-color: #09008d;
+}
+/*-------------------------- 
+	Form Style
+--------------------------*/
+.form .input input:focus, .form .input textarea:focus {
+  border-color: #09008d;
+}
+.form .input input[type="submit"] {
+  background-color: #09008d;
+  border-color:  #09008d;
+}
+.form .input input[type="submit"]:hover {
+  color: #09008d;
+}
+/*-------------------------- 
+	Toggles & Accordions Style
+--------------------------*/
+.panel-title a {
+  background: rgba(0, 0, 0, 0) url("../../img/shape/collapse/collapse-2.png") no-repeat scroll left 16px center;
+}
+.panel-title a[aria-expanded="true"] {
+  background-color: #09008d;
+  background-image: url("../../img/shape/collapse/collapse-active.png");
+}
+.panel-body {
+  border-color:  #09008d !important;
+}
+/*-------------------------- 
+	Tabs Style
+--------------------------*/
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  background-color: #09008d;
+}
+.tab-content > .tab-pane > .tab-body {
+  border-color:  #09008d;
+}
+/*-------------------------- 
+	Progress Bar Style
+--------------------------*/
+.progress-bar {
+  background-color: #09008d;
+}
+/*-------------------------- 
+	Header Style
+--------------------------*/
+.main-menu nav > ul > li.active > a {
+  color: #09008d;
+}
+.main-menu nav > ul > li.active > a::before, .main-menu nav > ul > li.active > a::after {
+  background-color: #09008d;
+}
+.main-menu nav > ul li ul li:hover > a {
+  color: #09008d;
+}
+.menu-style-6 nav > ul > li.active > a, .menu-style-6 nav > ul > li:hover > a {
+  background-color: #09008d;
+}
+.menu-style-7 nav > ul > li.active > a, .menu-style-7 nav > ul > li.active:hover > a {
+  border-color: #09008d;
+  color: #09008d;
+}
+.mean-container .mean-nav ul li a:hover {
+  color: #09008d;
+}
+/*-------------------------- 
+	Hero Style
+--------------------------*/
+.nivo-controlNav a.active {
+  background-color: #09008d;
+}
+.nivo-directionNav a:hover {
+  color: #09008d;
+}
+.hero-slide-content h1 span {
+  color: #09008d;
+}
+.find-course-form h5 i {
+  color: #09008d;
+}
+.bootstrap-select ul li.selected a, .bootstrap-select ul li a:hover {
+  color: #09008d;
+}
+.find-course-form form .course-submit input {
+  background-color: #09008d;
+}
+/*-------------------------- 
+	1. Page Banner Title Area
+--------------------------*/
+.page-banner ul li a:hover {
+  color: #09008d;
+}
+/*-------------------------- 
+	2. Feature Area
+--------------------------*/
+.single-feature .icon i {
+  color: #09008d;
+}
+/*-------------------------- 
+	3. Course Area
+--------------------------*/
+.course-item i {
+  color: #09008d;
+}
+.course-item h4::before {
+  background-color: #09008d;
+}
+/* Course Hover */
+.course-item:hover {
+  background-image: url("../../img/shape/course/course-color-2.png");
+}
+/*--------------------------
+	4. Video Area
+--------------------------*/
+.video-content a:hover {
+  color: #09008d;
+}
+/*--------------------------
+	5. Instructor Area
+--------------------------*/
+.instructor-social a:hover {
+  background-color: #09008d;
+  border-color: #09008d;
+}
+/*--------------------------
+	7. Call To Action Area
+--------------------------*/
+.cta-area {
+  background-color: #09008d;
+}
+/*--------------------------
+	8. Contact Area
+--------------------------*/
+.contact-info .single-info .icon {
+  background-color: #09008d;
+}
+.contact-info .single-info .content p a:hover {
+  color: #09008d;
+}
+/*-------------------------- 
+	Gallery Style
+--------------------------*/
+.gallery-filter button.active {
+  color: #09008d;
+}
+.gallery-filter button.active::before, .gallery-filter button.active::after {
+  background-color: #09008d;
+}
+.gallery-image::before {
+  background-color: #09008d;
+}
+/*-------------------------- 
+	Testimonial Style
+--------------------------*/
+.ti-slider::before {
+  background-color: #09008d;
+}
+.ti-slider .single-slide.slick-center .image {
+  border-color:  #09008d;
+}
+.ts-arrows:hover {
+  color: #09008d;
+}
+/*-------------------------- 
+	Pricing Style
+--------------------------*/
+.single-pricing:hover .pricing-head, .active .pricing-head {
+  background-color: #09008d;
+}
+.single-pricing:hover .pricing-price, .active .pricing-price {
+  background-image: url("../../img/shape/pricing/price-border-color.png");
+}
+.single-pricing:hover .pricing-action, .active .pricing-action {
+  background-color: #09008d;
+}
+.single-pricing:hover .pricing-action:hover {
+  color: #09008d;
+}
+/*-------------------------- 
+	Blog Style
+--------------------------*/
+.blog-item .image::before {
+  background-color: #09008d;
+}
+.blog-item .meta p a:hover, .blog-item .meta p a:hover i {
+  color: #09008d;
+}
+.blog-item .title a:hover {
+  color: #09008d;
+}
+.blog-meta p a i {
+  color: #09008d;
+}
+.blog-meta p a:hover, .blog-meta p a:hover i {
+  color: #09008d;
+}
+.blog-tag-share {
+  border-color:  #09008d;
+}
+.blog-tags a:hover {
+  color: #09008d;
+}
+.blog-share a:hover {
+  color: #09008d;
+}
+.single-comment .content a i {
+  color: #09008d;
+}
+.single-comment .content a:hover {
+  color: #09008d;
+}
+.sidebar-title {
+  border-color:  #09008d;
+}
+.category-sidebar ul li a:hover {
+  color: #09008d;
+}
+.latest-blog-sidebar .sin-blog .image::after {
+  background-color: #09008d;
+}
+.latest-blog-sidebar .sin-blog .content a:hover {
+  color: #09008d;
+}
+.tags-sidebar a:hover {
+  border-color: #09008d;
+  color: #09008d;
+}
+/*-------------------------- 
+	Footer Style
+--------------------------*/
+.contact-widget a:hover {
+  color: #09008d;
+}
+.widget-blog .content a:hover {
+  color: #09008d;
+}
+.widget-blog .image::before {
+  background-color: #09008d;
+}
+.instagram-item a::after {
+  background-color: #09008d;
+}
+.link-widget ul li a:hover {
+  color: #09008d;
+}
+.footer-bottom::before {
+  background-color: #09008d;
+}
+.footer-3-social a:hover {
+  color: #09008d;
+}
+.copyright a:hover {
+  color: #09008d;
+}
