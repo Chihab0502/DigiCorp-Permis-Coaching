@@ -8,10 +8,10 @@
     Version: 1.0
 
 -----------------------------------------------------------------------------------
-    
+
     CSS INDEX
     ===================
-	
+
     1.   Page Banner Title Area
     2.   Feature Area
 	3.   Course Area
@@ -21,10 +21,10 @@
 	7.   Call To Action Area
 	8.   Contact Area
 	9.   Dark Version Style
-	
-	
+
+
 -----------------------------------------------------------------------------------*/
-/*-------------------------- 
+/*--------------------------
 	1. Page Banner Title Area
 --------------------------*/
 .page-banner-area {
@@ -94,7 +94,7 @@
 .page-banner ul li a:hover {
   color: #09008d;
 }
-/*-------------------------- 
+/*--------------------------
 	2. Feature Area
 --------------------------*/
 .feature-wrapper {}
@@ -188,7 +188,7 @@
   margin-bottom: 9px;
 }
 .single-feature .text p{}
-/*-------------------------- 
+/*--------------------------
 	3. Course Area
 --------------------------*/
 .course-wrapper{}
@@ -524,3 +524,85 @@
 .dark-wrapper .pagination ul li a {
   color: #fff;
 }
+
+
+/*--------------------------
+	Bande haut de page
+--------------------------*/
+
+
+/* Styles globaux pour la bande */
+.band {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 300px; /* Hauteur ajustable */
+  color: #333; /* Couleur du texte plus douce pour les yeux */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police moderne et lisible */
+  overflow: hidden; /* Empêche le débordement du contenu */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ombre subtile pour le relief */
+  padding-bottom: 2%;
+  background-image: url("img/bg-grey.jpg");
+  background-size: cover; /* Assure que l'image de fond couvre tout l'espace disponible */
+  background-position: center; /* Centre l'image de fond */
+  background-repeat: no-repeat;
+}
+
+/* Containers pour les images */
+.image-container {
+  flex-basis: 22%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.left {
+  background-image: url('img/moto_and_car_inversed.png'); /* Ajustez avec l'URL de votre image gauche */
+}
+
+.right {
+  background-image: url('img/moto_and_car.png'); /* Ajustez avec l'URL de votre image droite */
+}
+
+/* Container pour le texte */
+.text-container {
+  flex-grow: 1;
+  text-align: center;
+  padding: 0 2%;
+  background: rgba(255, 255, 255, 0.5); /* Fond semi-transparent pour améliorer la lisibilité */
+  margin: 0 1%; /* Marges pour éviter que le texte touche les images */
+  border-radius: 8px; /* Bordures arrondies */
+}
+
+/* Titre dans le texte */
+.text-container h1 {
+  margin-bottom: 0.5em; /* Espacement sous le titre */
+  color: #1a1a1a; /* Couleur de texte */
+  font-size: 2em; /* Taille de police plus grande */
+  font-weight: bold; /* Gras pour attirer l'attention */
+}
+
+/* Paragraphe dans le texte */
+.text-container p {
+  margin-bottom: 1em; /* Espacement sous le paragraphe */
+}
+
+/* Bouton d'action */
+.text-container button {
+  padding: 10px 20px; /* Taille du padding pour rendre le bouton plus grand */
+  font-size: 1em; /* Taille de police du bouton */
+  color: white; /* Couleur du texte du bouton */
+  background-color: #000; /* Couleur d'arrière-plan du bouton */
+  border: none; /* Pas de bordure */
+  border-radius: 5px; /* Bordures arrondies pour le bouton */
+  cursor: pointer; /* Curseur en forme de main pour l'interactivité */
+  transition: background-color 0.3s; /* Transition pour l'effet au survol */
+  margin: 2%;
+}
+
+/* Effet au survol du bouton */
+.text-container button:hover {
+  background-color: #0056b3; /* Assombrir le bouton lors du survol */
+}
+
