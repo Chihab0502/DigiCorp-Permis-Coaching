@@ -2,10 +2,19 @@
 	Testimonial Style
 --------------------------*/
 .testimonial-area {
-  background: rgba(0, 0, 0, 0) url("../../img/section-bg/footer.jpg") repeat scroll 0 0;
+  /*background: rgba(0, 0, 0, 0) url("../../img/section-bg/footer.jpg") repeat scroll 0 0;*/
   -webkit-background-size: cover;
   background-size: cover;
 }
+
+.parallax-bg {
+  background-image: url("../../img/section-bg/footer.jpg"); /* Remplacez 'chemin/vers/votre/image.jpg' par le chemin de votre image de fond */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* Testimonial Image Slider */
 .ti-slider{}
 .ti-slider::before {
