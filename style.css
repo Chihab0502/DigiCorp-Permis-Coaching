@@ -537,7 +537,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 300px; /* Hauteur ajustable */
+  height: 400px; /* Hauteur ajustable */
   color: #333; /* Couleur du texte plus douce pour les yeux */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police moderne et lisible */
   overflow: hidden; /* Empêche le débordement du contenu */
@@ -551,18 +551,19 @@
 
 /* Containers pour les images */
 .image-container {
-  flex-basis: 20%;
+  flex-basis: 35%;
   height: 100%;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
-.left {
-  background-image: url('img/moto_and_car_inversed.png'); /* Ajustez avec l'URL de votre image gauche */
+.right {
+  background-image: url('img/voiture_panneau.png'); /* Ajustez avec l'URL de votre image gauche */
 }
 
-.right {
-  background-image: url('img/moto_and_car.png'); /* Ajustez avec l'URL de votre image droite */
+.left {
+  background-image: url('img/voiture_panneau_inversed.png'); /* Ajustez avec l'URL de votre image droite */
 }
 
 /* Container pour le texte */
