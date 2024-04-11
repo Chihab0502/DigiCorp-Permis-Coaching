@@ -656,4 +656,99 @@
   background-color: #07006b; /* Changement de couleur au survol */
 }
 
+/* Styles pour la navbar */
+.navbar-container {
+  padding-top: 200px; /* Ajoute un espace de 20 pixels entre la navbar et le haut de la page */
+}
 
+.navbar {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: transparent; /* Fond de la navbar transparent */
+  box-shadow: none; /* Supprime l'ombre */
+}
+
+
+/* Styles pour le logo */
+.navbar-logo img {
+  height: 80px; /* Taille de ton logo */
+  /* Ajoute d'autres styles si nécessaire */
+}
+
+/* Styles pour les liens de la navbar */
+.navbar-links {
+  list-style-type: none; /* Supprime les puces de la liste */
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.navbar-links li {
+  display: inline; /* Affiche les éléments de la liste en ligne */
+  margin-right: 40px; /* Espacement entre les éléments */
+}
+
+.navbar-links li:last-child {
+  margin-right: 0; /* Aucun espacement à droite pour le dernier élément */
+}
+
+/* Styles pour les liens de la navbar */
+.navbar-links li a {
+  text-decoration: none; /* Supprime la soulignement par défaut des liens */
+  color: black; /* Couleur du texte des liens */
+  font-weight: bold; /* Texte en gras */
+  transition: color 0.3s; /* Transition douce lors du survol */
+}
+
+
+
+.navbar-links li a:hover {
+  color: red; /* Changement de couleur lors du survol */
+}
+
+/* Styles pour les sous-rubriques */
+
+/* Afficher les sous-rubriques au survol de la rubrique parente */
+.navbar-links li:hover .sub-menu {
+  display: block;
+}
+
+/* Styles pour les sous-rubriques */
+.sub-menu li {
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 5px;
+}
+
+.sub-menu a {
+  display: block;
+  padding: 10px 20px;
+  color: #333; /* Couleur du texte */
+  text-decoration: none;
+}
+
+.sub-menu a:hover {
+  background-color: #f2f2f2; /* Couleur de fond au survol */
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  z-index: 1;
+  width: 100%; /* Largeur à 100% */
+}
+
+/* Afficher les sous-rubriques au survol de la rubrique parente */
+.navbar-links li:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu {
+  left: 0;
+  top: 100%;
+}
