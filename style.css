@@ -615,10 +615,52 @@
 /* Styles pour la bande additionnelle */
 .additional-band {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
-  background: #f9f9f9; /* Couleur de fond de la bande */
-  padding: 20px 0; /* Espacement au-dessus et en dessous des cartes */
+}
+
+.titleTarifs{
+  margin-top: 80px;
+}
+
+.soustitretarif{
+  margin-bottom: 50px;
+}
+
+.additional-band .section-title.no-underline {
+  text-decoration: none;
+}
+
+.additional-band h2.section-title {
+  text-decoration: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.title-wrapper h2 {
+  text-decoration: none !important; /* Supprimer le soulignement du titre */
+}
+
+.title-wrapper {
+  text-align: center;
+  width: 100%;
+}
+
+.forfait-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.forfait-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  width: 30%; /* Ajustez la largeur des cartes selon vos besoins */
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  margin: 10px;
 }
 
 .card {
@@ -627,7 +669,7 @@
   padding: 20px;
   text-align: center;
   border-radius: 8px; /* Bordures arrondies */
-  width: 23%; /* Définir une largeur pour les cartes */
+  width: 20%; /* Définir une largeur pour les cartes */
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Ombre douce pour un effet de profondeur */
   margin: 0 10px; /* Espacement entre les cartes */
 }
