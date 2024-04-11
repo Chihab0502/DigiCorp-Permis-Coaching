@@ -675,7 +675,7 @@
 
 /* Styles pour le logo */
 .navbar-logo img {
-  height: 250px; /* Taille de ton logo */
+  height: 280px; /* Taille de ton logo */
   max-width: 100%; /* Pour s'adapter à la largeur de la navbar */
   /* Ajoute d'autres styles si nécessaire */
 }
@@ -756,14 +756,19 @@
 }
 footer {
   display: flex;
+  flex-direction: row; /* Assure que les éléments internes s'alignent horizontalement */
   justify-content: space-between;
-  align-items: center;
-  background-color: #f0f0f0; /* Couleur de fond du footeur */
-  padding: 5px; /* Espace intérieur du footeur */
+  align-items: flex-start; /* Aligne les éléments internes en haut */
+  background-color: #FFF;
+  padding: 20px;
+  margin-top: 50px
 }
 
 .footer-left img {
-  width: 100px; /* Ajuste la taille de ton logo selon tes besoins */
+  height: 300px; /* Taille de ton logo */
+  max-width: 100%;
+  margin-top: -100px; /* Déplace le logo vers le haut */
+  /* Ajoute d'autres styles si nécessaire */
 }
 
 .footer-right div {
@@ -816,5 +821,11 @@ iframe {
 }
 
 .footer-left {
-  margin-bottom: 50px; /* Réduit la marge en bas du logo */
+  display: flex;
+  align-items: center; /* Aligne le contenu verticalement */
+}
+
+.footer-left,
+.footer-right {
+  margin-top: 50px; /* Ajuste la marge en haut négative selon tes besoins */
 }
