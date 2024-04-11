@@ -669,12 +669,14 @@
   padding: 10px 20px;
   background-color: transparent; /* Fond de la navbar transparent */
   box-shadow: none; /* Supprime l'ombre */
+  height: 100px;
 }
 
 
 /* Styles pour le logo */
 .navbar-logo img {
-  height: 80px; /* Taille de ton logo */
+  height: 250px; /* Taille de ton logo */
+  max-width: 100%; /* Pour s'adapter à la largeur de la navbar */
   /* Ajoute d'autres styles si nécessaire */
 }
 
