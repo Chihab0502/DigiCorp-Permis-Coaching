@@ -83,7 +83,7 @@
 }
 
 .single-feature .icon i {
-  color: #09008d;
+  color: #b30000;
   font-size: 36px;
   display: block;
 }
@@ -196,7 +196,7 @@
   color: #1a1a1a; /* Couleur de texte */
   font-size: 3em; /* Taille de police plus grande */
   font-weight: bold; /* Gras pour attirer l'attention */
-  font-family: Times, "Times New Roman", Georgia, serif; /* Remplacez 'Nouvelle-Police' par le nom de la police que vous souhaitez utiliser */
+  font-family: century-gothic, sans-serif; /* Remplacez 'Nouvelle-Police' par le nom de la police que vous souhaitez utiliser */
 }
 
 /* Paragraphe dans le texte */
@@ -221,6 +221,14 @@
 .text-container button:hover {
   background-color: #b30000; /* Assombrir le bouton lors du survol */
 }
+
+.tagline {
+  color: #b30000; /* Couleur du texte */
+  font-size: 1.2em; /* Taille de police */
+  margin: 20px 0; /* Ajoutez un peu d'espace au-dessus et en dessous de la phrase d'accroche */
+  font-weight: normal; /* Optionnel: ajustez la graisse de la police selon vos préférences */
+}
+
 
 
 /*--------------------------
@@ -506,6 +514,7 @@ iframe {
   justify-content: space-around;
   width: 100%;
   margin-top: 50px; /* Ajustez comme nécessaire */
+  background-color: #f1f1f1;
 }
 
 .financing-section,
@@ -556,4 +565,23 @@ button:hover {
   .partners-logos {
     flex-direction: column;
   }
+}
+
+.video-block {
+  position: relative;
+  width: 40%; /* Adapté à la largeur de l'écran */
+  height: auto; /* Hauteur ajustée selon le ratio de la vidéo */
+  margin: auto;
+  margin-top: 5%;
+
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Centre la vidéo horizontalement */
+  align-items: center; /* Centre la vidéo verticalement */
+  background-color: #f1f1f1; /* Couleur de fond, si nécessaire */
+}
+
+.video-block video {
+  width: 100%; /* Vous pouvez ajuster cela pour correspondre à la taille que vous souhaitez */
+  height: auto; /* Hauteur réglée automatiquement pour maintenir le ratio */
 }
