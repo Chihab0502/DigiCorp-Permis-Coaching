@@ -158,7 +158,6 @@
   overflow: hidden; /* Empêche le débordement du contenu */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ombre subtile pour le relief */
   padding-bottom: 2%;
-  background-image: url("img/bg-grey.jpg");
   background-size: cover; /* Assure que l'image de fond couvre tout l'espace disponible */
   background-position: center; /* Centre l'image de fond */
   background-repeat: no-repeat;
@@ -185,7 +184,7 @@
 .text-container {
   flex-grow: 1;
   text-align: center;
-  padding: 0 2%;
+  padding: 0 1%;
   background: rgba(255, 255, 255, 0.5); /* Fond semi-transparent pour améliorer la lisibilité */
   margin: 0 1%; /* Marges pour éviter que le texte touche les images */
   border-radius: 8px; /* Bordures arrondies */
@@ -195,8 +194,9 @@
 .text-container h1 {
   margin-bottom: 0.5em; /* Espacement sous le titre */
   color: #1a1a1a; /* Couleur de texte */
-  font-size: 2em; /* Taille de police plus grande */
+  font-size: 3em; /* Taille de police plus grande */
   font-weight: bold; /* Gras pour attirer l'attention */
+  font-family: Times, "Times New Roman", Georgia, serif; /* Remplacez 'Nouvelle-Police' par le nom de la police que vous souhaitez utiliser */
 }
 
 /* Paragraphe dans le texte */
