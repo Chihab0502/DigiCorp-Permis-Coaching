@@ -493,3 +493,67 @@ iframe {
 .footer-right {
   margin-top: 50px; /* Ajuste la marge en haut négative selon tes besoins */
 }
+
+
+/*--------------------------
+	Finnancement/Entreprises
+--------------------------*/
+
+.container-partners-financing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 50px; /* Ajustez comme nécessaire */
+}
+
+.financing-section,
+.partners-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.financing-logos,
+.partners-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px; /* Espacement entre les logos */
+}
+
+.financing-logos img,
+.partners-logos img {
+  max-width: 100px; /* Ajustez la taille des logos */
+  margin: 10px; /* Espacement autour des logos */
+}
+
+button {
+  background-color: #000; /* Couleur d'arrière-plan du bouton */
+  color: #fff; /* Couleur de texte du bouton */
+  padding: 10px 20px; /* Taille du bouton */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.financing-button {
+  text-align: center;
+  width: 100%; /* Prend la largeur totale pour centrer le bouton */
+  margin-top: 20px; /* Ajoutez de l'espace entre les logos et le bouton */
+}
+
+
+button:hover {
+  background-color: #b30000; /* Couleur du bouton au survol */
+}
+
+/* Ajustez les breakpoints selon les besoins */
+@media (max-width: 768px) {
+  .financing-logos,
+  .partners-logos {
+    flex-direction: column;
+  }
+}
