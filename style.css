@@ -1,143 +1,176 @@
 /*--------------------------
 	2. Feature Area
 --------------------------*/
-.feature-wrapper {}
-.feature-left{}
-.feature-right{}
+.feature-wrapper {
+}
+
+.feature-left {
+}
+
+.feature-right {
+}
+
 /* Feature Image */
 .feature-image {
-  z-index: 9;
+    z-index: 9;
 }
+
 /* Single Feature */
 .single-feature {
-  position: relative;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  z-index: 1;
+    position: relative;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    z-index: 1;
 }
+
 .single-feature:nth-child(1) {
-  padding: 16px 0 15px;
+    padding: 16px 0 15px;
 }
+
 .single-feature:nth-child(2) {
-  padding: 38px 0;
+    padding: 38px 0;
 }
+
 .single-feature:nth-child(3) {
-  padding: 16px 0 15px;
+    padding: 16px 0 15px;
 }
+
 /* Single Feature Hover */
 .single-feature:hover {
-  background-color: #fff;
+    background-color: #fff;
 }
+
 .single-feature::before {
-  background-color: #fff;
-  bottom: 0;
-  content: "";
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  width: 50%;
-  z-index: -1;
+    background-color: #fff;
+    bottom: 0;
+    content: "";
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 50%;
+    z-index: -1;
 }
+
 .single-feature:hover::before {
-  opacity: 1;
+    opacity: 1;
 }
+
 .feature-left .single-feature::before {
-  left: 100%;
+    left: 100%;
 }
+
 .feature-right .single-feature::before {
-  Right: 100%;
+    Right: 100%;
 }
+
 /* Left Single Feature */
 .feature-left .single-feature {
-  margin-right: -7px;
+    margin-right: -7px;
 }
+
 .feature-left .single-feature:nth-child(2) {
-  margin-left: -15px;
-  padding-right: 24px;
+    margin-left: -15px;
+    padding-right: 24px;
 }
+
 /* Right Single Feature */
 .feature-right .single-feature {
-  margin-left: -7px;
+    margin-left: -7px;
 }
+
 .feature-right .single-feature:nth-child(2) {
-  margin-right: -15px;
-  padding-left: 24px;
+    margin-right: -15px;
+    padding-left: 24px;
 }
+
 /* Featue Icon */
 .single-feature .icon {
-  display: block;
-  margin-top: 19px;
-  min-width: 36px;
+    display: block;
+    margin-top: 19px;
+    min-width: 36px;
 }
+
 .feature-left .icon {
-  float: right;
-  margin-left: 29px;
-  text-align: left;
+    float: right;
+    margin-left: 29px;
+    text-align: left;
 }
+
 .feature-right .icon {
-  float: left;
-  margin-right: 29px;
-  text-align: right;
+    float: left;
+    margin-right: 29px;
+    text-align: right;
 }
 
 .single-feature .icon i {
-  color: #b30000;
-  font-size: 36px;
-  display: block;
+    color: #b30000;
+    font-size: 36px;
+    display: block;
 }
+
 /* Feature Text */
-.single-feature .text{}
-.single-feature .text h4 {
-  margin-bottom: 9px;
+.single-feature .text {
 }
-.single-feature .text p{}
+
+.single-feature .text h4 {
+    margin-bottom: 9px;
+}
+
+.single-feature .text p {
+}
 
 /*--------------------------
 	4. Video Area
 --------------------------*/
 .video-area {
-  background: rgba(0, 0, 0, 0) url("img/section-bg/video.jpg") repeat scroll 0 0;
-  -webkit-background-size: cover;
-  background-size: cover;
-  padding: 195px 0;
+    background: rgba(0, 0, 0, 0) url("img/section-bg/video.jpg") repeat scroll 0 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 195px 0;
 }
-.video-content {}
+
+.video-content {
+}
+
 .video-content a {
-  color: #ffffff;
-  display: inline-block;
+    color: #ffffff;
+    display: inline-block;
 }
+
 .video-content a:hover {
-  color: #09008d;
+    color: #09008d;
 }
+
 .video-content a i {
-  display: block;
-  font-size: 60px;
+    display: block;
+    font-size: 60px;
 }
+
 .video-content h3 {
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 18px;
-  margin: 30px 0 0;
-  text-transform: uppercase;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 18px;
+    margin: 30px 0 0;
+    text-transform: uppercase;
 }
 
 .red-btn {
-  background-color: black !important;
-  color: white !important;
-  transition: background-color 0.3s ease;
+    background-color: black !important;
+    color: white !important;
+    transition: background-color 0.3s ease;
 
-  /* Ajoutez d'autres styles au besoin */
+    /* Ajoutez d'autres styles au besoin */
 }
 
 .red-btn:hover {
-  background-color: red !important;
+    background-color: red !important;
 }
 
 .single-feature .icon i {
-  color: red !important; /* Couleur rouge pour les icônes */
+    color: red !important; /* Couleur rouge pour les icônes */
 }
 
 
@@ -146,360 +179,326 @@
 --------------------------*/
 
 
-/* Styles globaux pour la bande */
 .band {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 400px; /* Hauteur ajustable */
-  color: #333; /* Couleur du texte plus douce pour les yeux */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police moderne et lisible */
-  overflow: hidden; /* Empêche le débordement du contenu */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ombre subtile pour le relief */
-  padding-bottom: 2%;
-  background-size: cover; /* Assure que l'image de fond couvre tout l'espace disponible */
-  background-position: center; /* Centre l'image de fond */
-  background-repeat: no-repeat;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 0%;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    padding-bottom: 2%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-/* Containers pour les images */
-.image-container {
-  flex-basis: 35%;
-  height: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.right {
-  background-image: url('img/voiture_panneau.png'); /* Ajustez avec l'URL de votre image gauche */
-}
-
-.left {
-  background-image: url('img/voiture_panneau_inversed.png'); /* Ajustez avec l'URL de votre image droite */
-}
-
-/* Container pour le texte */
 .text-container {
-  flex-grow: 1;
-  text-align: center;
-  padding: 0 1%;
-  background: rgba(255, 255, 255, 0.5); /* Fond semi-transparent pour améliorer la lisibilité */
-  margin: 0 1%; /* Marges pour éviter que le texte touche les images */
-  border-radius: 8px; /* Bordures arrondies */
+    flex-grow: 1;
+    text-align: center;
+    padding: 0 1%;
+    padding-bottom: 70px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 1%;
+    border-radius: 8px;
 }
 
-/* Titre dans le texte */
 .text-container h1 {
-  margin-bottom: 0.5em; /* Espacement sous le titre */
-  color: #1a1a1a; /* Couleur de texte */
-  font-size: 3em; /* Taille de police plus grande */
-  font-weight: bold; /* Gras pour attirer l'attention */
-  font-family: century-gothic, sans-serif; /* Remplacez 'Nouvelle-Police' par le nom de la police que vous souhaitez utiliser */
+    margin-bottom: 0.5em;
+    color: #1a1a1a;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: century-gothic, sans-serif;
 }
 
-/* Paragraphe dans le texte */
-.text-container p {
-  margin-bottom: 1em; /* Espacement sous le paragraphe */
-}
 
-/* Bouton d'action */
+
 .text-container button {
-  padding: 10px 20px; /* Taille du padding pour rendre le bouton plus grand */
-  font-size: 1em; /* Taille de police du bouton */
-  color: white; /* Couleur du texte du bouton */
-  background-color: #000; /* Couleur d'arrière-plan du bouton */
-  border: none; /* Pas de bordure */
-  border-radius: 5px; /* Bordures arrondies pour le bouton */
-  cursor: pointer; /* Curseur en forme de main pour l'interactivité */
-  transition: background-color 0.3s; /* Transition pour l'effet au survol */
-  margin: 2%;
+    padding: 10px ;
+    font-size: 1em;
+    color: white;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 2%;
 }
 
-/* Effet au survol du bouton */
 .text-container button:hover {
-  background-color: #b30000; /* Assombrir le bouton lors du survol */
+    background-color: #b30000;
 }
 
 .tagline {
-  color: #b30000; /* Couleur du texte */
-  font-size: 1.2em; /* Taille de police */
-  margin: 20px 0; /* Ajoutez un peu d'espace au-dessus et en dessous de la phrase d'accroche */
-  font-weight: normal; /* Optionnel: ajustez la graisse de la police selon vos préférences */
+    color: #b30000;
+    line-height: 1.2;
+    font-size: 3em;
+    margin: 20px 0;
+    font-weight: normal;
 }
-
 
 
 /*--------------------------
 	Bande Card Tarif
 --------------------------*/
 
-/* Styles pour la bande additionnelle */
 .additional-band {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.titleTarifs{
-  margin-top: 80px;
+.titleTarifs {
+    margin-top: 80px;
 }
 
-.soustitretarif{
-  margin-bottom: 50px;
+.soustitretarif {
+    margin-bottom: 50px;
 }
 
 .additional-band .section-title.no-underline {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .additional-band h2.section-title {
-  text-decoration: none;
-  margin-top: 20px;
-  margin-bottom: 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .title-wrapper h2 {
-  text-decoration: none !important; /* Supprimer le soulignement du titre */
+    text-decoration: none !important;
 }
 
 .title-wrapper {
-  text-align: center;
-  width: 100%;
+    text-align: center;
+    width: 100%;
 }
 
 .forfait-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 35px;
 }
 
 .forfait-card {
-  background: #ffffff;
-  border: 1px solid #ddd;
-  padding: 20px;
-  text-align: center;
-  border-radius: 8px;
-  width: 30%; /* Ajustez la largeur des cartes selon vos besoins */
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-  margin: 10px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    margin: 10px;
 }
 
 .card {
-  background: #ffffff; /* Fond blanc pour les cartes */
-  border: 1px solid #ddd; /* Bordure subtile pour les cartes */
-  padding: 20px;
-  text-align: center;
-  border-radius: 8px; /* Bordures arrondies */
-  width: 20%; /* Définir une largeur pour les cartes */
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Ombre douce pour un effet de profondeur */
-  margin: 0 10px; /* Espacement entre les cartes */
+    background: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    width: 20%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
 }
 
 .card h3 {
-  color: #333; /* Couleur du texte pour le titre */
-  font-size: 1.8em; /* Taille du texte pour le titre */
-  margin-bottom: 10px; /* Espacement sous le titre */
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 10px;
 }
 
 .card p {
-  color: #666; /* Couleur du texte pour la description/prix */
-  margin-bottom: 20px; /* Espacement au-dessus du bouton */
+    color: #666;
+    margin-bottom: 20px;
 }
 
 .card button {
-  background-color: #000; /* Couleur d'arrière-plan du bouton */
-  color: #ffffff; /* Couleur du texte du bouton */
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+    background-color: #000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .card button:hover {
-  background-color: #b30000; /* Changement de couleur au survol */
+    background-color: #b30000;
 }
 
 /* Styles pour la navbar */
 .navbar-container {
-  padding-top: 200px; /* Ajoute un espace de 20 pixels entre la navbar et le haut de la page */
+    padding-top: 200px;
 }
 
 .navbar {
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: transparent; /* Fond de la navbar transparent */
-  box-shadow: none; /* Supprime l'ombre */
-  height: 100px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    box-shadow: none;
+    height: 100px;
 }
 
 
 /* Styles pour le logo */
 .navbar-logo img {
-  height: 280px; /* Taille de ton logo */
-  max-width: 100%; /* Pour s'adapter à la largeur de la navbar */
-  /* Ajoute d'autres styles si nécessaire */
+    height: 280px;
+    max-width: 100%;
 }
 
-/* Styles pour les liens de la navbar */
 .navbar-links {
-  list-style-type: none; /* Supprime les puces de la liste */
-  margin: 0;
-  padding: 0;
-  position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
 
 .navbar-links li {
-  display: inline; /* Affiche les éléments de la liste en ligne */
-  margin-right: 40px; /* Espacement entre les éléments */
+    display: inline;
+    margin-right: 40px;
 }
 
 .navbar-links li:last-child {
-  margin-right: 0; /* Aucun espacement à droite pour le dernier élément */
+    margin-right: 0;
 }
 
-/* Styles pour les liens de la navbar */
 .navbar-links li a {
-  text-decoration: none; /* Supprime la soulignement par défaut des liens */
-  color: black; /* Couleur du texte des liens */
-  font-weight: bold; /* Texte en gras */
-  transition: color 0.3s; /* Transition douce lors du survol */
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
 }
-
 
 
 .navbar-links li a:hover {
-  color: red; /* Changement de couleur lors du survol */
+    color: red;
 }
 
-/* Styles pour les sous-rubriques */
 
-/* Afficher les sous-rubriques au survol de la rubrique parente */
 .navbar-links li:hover .sub-menu {
-  display: block;
+    display: block;
 }
 
-/* Styles pour les sous-rubriques */
 .sub-menu li {
-  display: block;
-  text-align: left;
-  width: 100%;
-  padding: 5px;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 5px;
 }
 
 .sub-menu a {
-  display: block;
-  padding: 10px 20px;
-  color: #333; /* Couleur du texte */
-  text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
 }
 
 .sub-menu a:hover {
-  background-color: #f2f2f2; /* Couleur de fond au survol */
+    background-color: #f2f2f2;
 }
 
 .sub-menu {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  z-index: 1;
-  width: 100%; /* Largeur à 100% */
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    z-index: 1;
+    width: 100%;
 }
 
-/* Afficher les sous-rubriques au survol de la rubrique parente */
 .navbar-links li:hover .sub-menu {
-  display: block;
+    display: block;
 }
 
 .sub-menu {
-  left: 0;
-  top: 100%;
+    left: 0;
+    top: 100%;
 }
+
 footer {
-  display: flex;
-  flex-direction: row; /* Assure que les éléments internes s'alignent horizontalement */
-  justify-content: space-between;
-  align-items: flex-start; /* Aligne les éléments internes en haut */
-  background-color: #FFF;
-  padding: 20px;
-  margin-top: 50px
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #FFF;
+    padding: 20px;
+    margin-top: 50px
 }
 
 .footer-left img {
-  height: 300px; /* Taille de ton logo */
-  max-width: 100%;
-  margin-top: -100px; /* Déplace le logo vers le haut */
-  /* Ajoute d'autres styles si nécessaire */
+    height: 300px;
+    max-width: 100%;
+    margin-top: -100px;
 }
 
 .footer-right div {
-  flex: 1; /* Prend autant d'espace que possible */
-  text-align: center; /* Aligne le texte au centre */
-  margin-bottom: 200px;
+    flex: 1;
+    text-align: center;
+    margin-bottom: 200px;
 }
 
 .footer-right > div {
-  text-align: center;
-  margin-bottom: 10px; /* Réduit la marge en bas de chaque rubrique */
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .footer-right div h3 {
-  margin-bottom: 10px; /* Ajoute un peu d'espace en dessous du titre */
+    margin-bottom: 10px;
 }
 
 .footer-right div p {
-  margin: 5px 0; /* Ajoute un espace entre chaque ligne */
+    margin: 5px 0;
 }
 
 
 .footer-right {
-  display: flex;
-  justify-content: center; /* Centre les éléments horizontalement */
-  align-items: center;
-  flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
 .footer-right h4 {
-  display: inline-block;
-  white-space: nowrap;
-  margin: 0;
-  padding: 0 10px;
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0 10px;
 }
 
 .footer-right h3 {
-  margin-bottom: 5px; /* Réduit la marge en bas du titre */
+    margin-bottom: 5px;
 }
 
 .footer-right p {
-  margin: 3px 0; /* Réduit l'espace entre chaque ligne */
+    margin: 3px 0;
 }
 
 iframe {
-  width: 400px;
-  height: 300px;
-  margin-bottom: 20px;
-  margin-right: 30px;
+    width: 400px;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-right: 30px;
 }
 
-.footer{
-  position: absolute;
-  bottom:0;
+.footer {
+    position: absolute;
+    bottom: 0;
 }
 
 .footer-left {
-  display: flex;
-  align-items: center; /* Aligne le contenu verticalement */
+    display: flex;
+    align-items: center;
 }
 
 .footer-left,
 .footer-right {
-  margin-top: 50px; /* Ajuste la marge en haut négative selon tes besoins */
+    margin-top: 50px;
 }
 
 
@@ -508,80 +507,79 @@ iframe {
 --------------------------*/
 
 .container-partners-financing {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  margin-top: 50px; /* Ajustez comme nécessaire */
-  background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 50px;
+    background-color: #f1f1f1;
 }
 
 .financing-section,
 .partners-section {
-  text-align: center;
-  margin: 20px 0;
+    text-align: center;
+    margin: 20px 0;
 }
 
 .financing-logos,
 .partners-logos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 30px; /* Espacement entre les logos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .financing-logos img,
 .partners-logos img {
-  max-width: 100px; /* Ajustez la taille des logos */
-  margin: 10px; /* Espacement autour des logos */
+    max-width: 100px;
+    margin: 10px;
 }
 
 button {
-  background-color: #000; /* Couleur d'arrière-plan du bouton */
-  color: #fff; /* Couleur de texte du bouton */
-  padding: 10px 20px; /* Taille du bouton */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .financing-button {
-  text-align: center;
-  width: 100%; /* Prend la largeur totale pour centrer le bouton */
-  margin-top: 20px; /* Ajoutez de l'espace entre les logos et le bouton */
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
 }
 
 
 button:hover {
-  background-color: #b30000; /* Couleur du bouton au survol */
+    background-color: #b30000;
 }
 
-/* Ajustez les breakpoints selon les besoins */
 @media (max-width: 768px) {
-  .financing-logos,
-  .partners-logos {
-    flex-direction: column;
-  }
+    .financing-logos,
+    .partners-logos {
+        flex-direction: column;
+    }
 }
 
 .video-block {
-  position: relative;
-  width: 40%; /* Adapté à la largeur de l'écran */
-  height: auto; /* Hauteur ajustée selon le ratio de la vidéo */
-  margin: auto;
-  margin-top: 5%;
+    position: relative;
+    width: 40%;
+    height: auto;
+    margin: auto;
+    margin-top: 5%;
 
-  overflow: hidden;
-  display: flex;
-  justify-content: center; /* Centre la vidéo horizontalement */
-  align-items: center; /* Centre la vidéo verticalement */
-  background-color: #f1f1f1; /* Couleur de fond, si nécessaire */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
 }
 
 .video-block video {
-  width: 100%; /* Vous pouvez ajuster cela pour correspondre à la taille que vous souhaitez */
-  height: auto; /* Hauteur réglée automatiquement pour maintenir le ratio */
+    width: 100%;
+    height: auto;
 }
