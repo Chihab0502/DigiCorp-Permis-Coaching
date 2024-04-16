@@ -526,20 +526,7 @@ iframe {
     margin: 20px 0;
 }
 
-.financing-logos,
-.partners-logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
-}
 
-.financing-logos img,
-.partners-logos img {
-    max-width: 100px;
-    margin: 10px;
-}
 
 button {
     background-color: #000;
