@@ -526,6 +526,12 @@ iframe {
     margin: 20px 0;
 }
 
+.icon img {
+    max-width: 100px; /* ou toute autre taille appropriée */
+    height: auto; /* pour maintenir le ratio d'aspect */
+}
+
+
 button {
     background-color: #000;
     color: #fff;
