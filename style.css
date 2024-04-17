@@ -521,6 +521,10 @@ iframe {
     margin-top: 50px;
 }
 
+.feature-area img {
+    position: absolute;
+    align-content: center;
+}
 
 /*--------------------------
 	Finnancement/Entreprises
