@@ -565,7 +565,7 @@ button {
 }
 
 .thumbnail {
-    height: 200px; /* ou toute autre hauteur fixe que vous souhaitez */
+    height: 150px; /* ou toute autre hauteur fixe que vous souhaitez */
     display: flex;
     align-items: center;
     justify-content: center;
