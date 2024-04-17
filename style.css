@@ -446,7 +446,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: #FFF;
+    background-color: #ddd;
     padding: 20px;
     margin-top: 50px
 }
