@@ -522,8 +522,14 @@ iframe {
 }
 
 .feature-area img {
-    position: absolute;
-    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-area img {
+    margin: 0 auto; /* Pour centrer l'image horizontalement */
+    display: block; /* Pour s'assurer que les marges automatiques fonctionnent */
 }
 
 /*--------------------------
