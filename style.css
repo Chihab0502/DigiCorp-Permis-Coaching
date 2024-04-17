@@ -526,8 +526,6 @@ iframe {
     margin: 20px 0;
 }
 
-
-
 button {
     background-color: #000;
     color: #fff;
@@ -537,6 +535,21 @@ button {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
+.thumbnail {
+    height: 200px; /* ou toute autre hauteur fixe que vous souhaitez */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.img-container img {
+    max-width: 100%; /* assure que l'image est contenue horizontalement dans le thumbnail */
+    max-height: 100%; /* assure que l'image est contenue verticalement dans le thumbnail */
+    object-fit: contain; /* pour que l'image conserve son ratio sans être tronquée */
+}
+
 
 .financing-button {
     text-align: center;
