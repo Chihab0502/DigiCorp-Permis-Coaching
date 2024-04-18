@@ -566,3 +566,8 @@ button:hover {
         flex-direction: column;
     }
 }
+
+.img-fluid {
+    max-width: 100px; /* Remplacez 200px par la taille maximale souhaitée */
+    height: auto; /* Garantit que la hauteur est ajustée proportionnellement */
+}
