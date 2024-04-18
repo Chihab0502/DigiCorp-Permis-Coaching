@@ -121,41 +121,6 @@
 .single-feature .text p {
 }
 
-/*--------------------------
-	4. Video Area
---------------------------*/
-.video-area {
-    background: rgba(0, 0, 0, 0) url("img/section-bg/video.jpg") repeat scroll 0 0;
-    -webkit-background-size: cover;
-    background-size: cover;
-    padding: 195px 0;
-}
-
-.video-content {
-}
-
-.video-content a {
-    color: #ffffff;
-    display: inline-block;
-}
-
-.video-content a:hover {
-    color: #09008d;
-}
-
-.video-content a i {
-    display: block;
-    font-size: 60px;
-}
-
-.video-content h3 {
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 18px;
-    margin: 30px 0 0;
-    text-transform: uppercase;
-}
 
 .red-btn {
     background-color: black !important;
@@ -396,6 +361,11 @@
     transition: color 0.3s;
 }
 
+.titretiktok {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
 
 .navbar-links li a:hover {
     color: red;
@@ -597,21 +567,4 @@ button:hover {
     }
 }
 
-.video-block {
-    position: relative;
-    width: 40%;
-    height: auto;
-    margin: auto;
-    margin-top: 5%;
 
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f1f1f1;
-}
-
-.video-block video {
-    width: 100%;
-    height: auto;
-}
