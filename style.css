@@ -569,3 +569,13 @@ button:hover {
     max-width: 100px; /* Remplacez 200px par la taille maximale souhaitée */
     height: auto; /* Garantit que la hauteur est ajustée proportionnellement */
 }
+
+.background-image {
+    background-image: url('./img/header.png');
+    opacity: 0.30;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    filter: grayscale(30%);
+}
