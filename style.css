@@ -882,8 +882,13 @@ button:hover {
 }
 
 
+.fa-angle-left{
+    margin-left: -40px;
+}
 
-
+.carousel {
+    margin-left: 80px;
+}
 
 
 
