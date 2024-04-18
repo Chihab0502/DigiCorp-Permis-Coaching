@@ -184,8 +184,9 @@
 }
 
 .text-container h1 {
+    padding: 60px;
     margin-bottom: 0.5em;
-    color: #1a1a1a;
+    color: black;
     font-size: 3em;
     font-weight: bold;
     font-family: century-gothic, sans-serif;
@@ -572,7 +573,6 @@ button:hover {
 
 .background-image {
     background-image: url('./img/header.png');
-    opacity: 0.30;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
