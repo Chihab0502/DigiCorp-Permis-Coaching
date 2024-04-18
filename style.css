@@ -574,14 +574,6 @@ button:hover {
     height: auto; /* Garantit que la hauteur est ajustée proportionnellement */
 }
 
-.background-image {
-    background-image: url('./img/header.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 100px 0;
-    filter: grayscale(30%);
-}
 
 
 
@@ -595,7 +587,15 @@ button:hover {
     --font-text: "Lato", sans-serif;
 }
 
-/* RESET */
+:root {
+    /* Colors */
+    --brand-color: hsl(46, 100%, 50%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    /* Fonts */
+    --font-title: "Montserrat", sans-serif;
+    --font-text: "Lato", sans-serif;
+}
 
 /* Box sizing rules */
 
