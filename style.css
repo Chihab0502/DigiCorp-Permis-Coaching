@@ -887,10 +887,14 @@ button:hover {
 }
 
 .carousel {
-    margin-left: 80px;
+    margin-left: 60px;
 }
 
-
+.TitreFinancement {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
 
 
 
