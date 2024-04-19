@@ -505,9 +505,7 @@ iframe {
     display: block; /* Pour s'assurer que les marges automatiques fonctionnent */
 }
 
-/*--------------------------
-	Finnancement/Entreprises
---------------------------*/
+
 
 .container-partners-financing {
     display: flex;
