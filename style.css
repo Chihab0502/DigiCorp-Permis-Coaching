@@ -768,12 +768,31 @@ button:hover {
 
 
 
-.finance-paiement {
-    display: flex;        /* Nouveau */
-    justify-content: center; /* Nouveau */
-    align-items: center;  /* Nouveau si vous voulez également centrer verticalement */
-    background-color: #f1f1f1;
-    height: 100vh;       /* Nouveau pour s'assurer que finance-paiement prend toute la hauteur de la fenêtre */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapper-container {
+    background-color: #ddd; /* Définir la couleur de fond */
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+
+.finance-paiement .partenaires {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .wrapper {
@@ -792,7 +811,6 @@ button:hover {
     position: absolute;
     text-align: center;
     line-height: 50px;
-    background: #fff;
     border-radius: 50%;
     box-shadow: 0 3px 6px rgba(0,0,0,0.23);
     transform: translateY(-50%);
@@ -865,7 +883,6 @@ button:hover {
     margin: 30px 0 5px;
 }
 .carousel .card span {
-    color: #6A6D78;
     font-size: 1.31rem;
 }
 
@@ -890,14 +907,8 @@ button:hover {
     margin-left: 60px;
 }
 
-.TitreFinancement {
+.wrapper-container h2 {
     margin-top: 30px;
     text-align: center;
     margin-bottom: 30px;
 }
-
-
-
-
-
-

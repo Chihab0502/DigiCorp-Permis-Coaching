@@ -1,10 +1,11 @@
-const wrapper = document.querySelector(".wrapper");
-const carousel = document.querySelector(".carousel");
+// Carousel pour le premier élément
+const wrapper = document.querySelector(".finance-paiement .wrapper");
+const carousel = document.querySelector(".finance-paiement .carousel");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
-const arrowBtns = document.querySelectorAll(".wrapper i");
+const arrowBtns = document.querySelectorAll(".finance-paiement .wrapper i");
 const carouselChildrens = [...carousel.children];
 
-let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
+let isDragging = false, isAutoPlay = false, startX, startScrollLeft, timeoutId;
 
 // Get the number of cards that can fit in the carousel at once
 let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
@@ -28,6 +29,38 @@ carousel.classList.remove("no-transition");
 arrowBtns.forEach(btn => {
     btn.addEventListener("click", () => {
         carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
+    });
+});
+
+// Carousel pour le deuxième élément
+const wrapperBis = document.querySelector(".partenaires .wrapper");
+const carouselBis = document.querySelector(".partenaires .carousel");
+const firstCardWidthBis = carouselBis.querySelector(".card").offsetWidth;
+const arrowBtnsBis = document.querySelectorAll(".partenaires .wrapper i");
+const carouselChildrensBis = [...carouselBis.children];
+
+// Get the number of cards that can fit in the carousel at once
+let cardPerViewBis = Math.round(carouselBis.offsetWidth / firstCardWidthBis);
+
+// Insert copies of the last few cards to beginning of carousel for infinite scrolling
+carouselChildrensBis.slice(-cardPerViewBis).reverse().forEach(card => {
+    carouselBis.insertAdjacentHTML("afterbegin", card.outerHTML);
+});
+
+// Insert copies of the first few cards to end of carousel for infinite scrolling
+carouselChildrensBis.slice(0, cardPerViewBis).forEach(card => {
+    carouselBis.insertAdjacentHTML("beforeend", card.outerHTML);
+});
+
+// Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
+carouselBis.classList.add("no-transition");
+carouselBis.scrollLeft = carouselBis.offsetWidth;
+carouselBis.classList.remove("no-transition");
+
+// Add event listeners for the arrow buttons to scroll the carousel left and right
+arrowBtnsBis.forEach(btn => {
+    btn.addEventListener("click", () => {
+        carouselBis.scrollLeft += btn.id == "left_bis" ? -firstCardWidthBis : firstCardWidthBis;
     });
 });
 
@@ -82,3 +115,10 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
+
+carouselBis.addEventListener("mousedown", dragStart);
+carouselBis.addEventListener("mousemove", dragging);
+document.addEventListener("mouseup", dragStop);
+carouselBis.addEventListener("scroll", infiniteScroll);
+wrapperBis.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+wrapperBis.addEventListener("mouseleave", autoPlay);
