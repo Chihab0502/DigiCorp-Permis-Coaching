@@ -5,158 +5,82 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-.feature-wrapper {
+.image-content {
+    text-align: center; /* Centrer le contenu */
 }
 
-.feature-left {
+.image-content img {
+    max-width: 100%; /* Pour s'assurer que l'image ne dépasse pas la largeur de son conteneur */
+    height: auto; /* Pour conserver les proportions de l'image */
+    max-height: 300px; /* Ajustez la hauteur maximale selon vos besoins */
 }
 
-.feature-right {
+/* Style pour le texte */
+.text-content {
+    background-color: #f9f9f9; /* Couleur de fond */
+    border: 2px solid #b30000; /* Couleur de la bordure */
+    border-radius: 10px; /* Arrondi des coins */
+    padding: 20px;
+    margin-top: 20px; /* Déplacer légèrement le bloc de texte vers le bas */
+    font-size: 18px; /* Taille de la police */
+    line-height: 1.5; /* Espacement entre les lignes */
 }
 
-/* Feature Image */
-.feature-image {
-    z-index: 9;
+.text-content h4 {
+    color: #b30000; /* Couleur du titre */
 }
 
-/* Single Feature */
-.single-feature {
-    position: relative;
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-    z-index: 1;
+.text-content p {
+    margin-bottom: 0; /* Supprimer la marge en bas du paragraphe */
 }
 
-.single-feature:nth-child(1) {
-    padding: 16px 0 15px;
+/* Ajustements des marges */
+.new-text-row {
+    margin-top: 30px; /* Espacement supplémentaire en haut */
+    margin-bottom: 30px; /* Espacement supplémentaire en bas */
 }
 
-.single-feature:nth-child(2) {
-    padding: 38px 0;
-}
-
-.single-feature:nth-child(3) {
-    padding: 16px 0 15px;
-}
-
-/* Single Feature Hover */
-.single-feature:hover {
-    background-color: #fff;
-}
-
-.single-feature::before {
-    background-color: #fff;
-    bottom: 0;
-    content: "";
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-    width: 50%;
-    z-index: -1;
-}
-
-.single-feature:hover::before {
-    opacity: 1;
-}
-
-.feature-left .single-feature::before {
-    left: 100%;
-}
-
-.feature-right .single-feature::before {
-    Right: 100%;
-}
-
-/* Left Single Feature */
-.feature-left .single-feature {
-    margin-right: -7px;
-}
-
-.feature-left .single-feature:nth-child(2) {
-    margin-left: -15px;
-    padding-right: 24px;
-}
-
-/* Right Single Feature */
-.feature-right .single-feature {
-    margin-left: -7px;
-}
-
-.feature-right .single-feature:nth-child(2) {
-    margin-right: -15px;
-    padding-left: 24px;
-}
-
-/* Featue Icon */
-.single-feature .icon {
-    display: block;
-    margin-top: 19px;
-    min-width: 36px;
-}
-
-.feature-left .icon {
-    float: right;
-    margin-left: 29px;
-    text-align: left;
-}
-
-.feature-right .icon {
-    float: left;
-    margin-right: 29px;
-    text-align: right;
-}
-
-.single-feature .icon i {
-    color: #b30000;
-    font-size: 36px;
-    display: block;
-}
-
-/* Feature Text */
-.single-feature .text {
-}
-
-.single-feature .text h4 {
-    margin-bottom: 9px;
-}
-
-.single-feature .text p {
+.black-bordered-text {
+    border: 2px solid black; /* Bordure noire */
+    border-radius: 10px; /* Arrondi des coins */
+    padding: 20px; /* Espacement intérieur */
+    background-color: #f9f9f9; /* Couleur de fond */
 }
 
 
+/* Centrage du bouton */
+.centered-link {
+    text-align: center;
+    margin-top: 30px; /* Espacement supplémentaire en haut */
+}
+
+/* Bouton */
 .red-btn {
     background-color: black !important;
     color: white !important;
     transition: background-color 0.3s ease;
-
-    /* Ajoutez d'autres styles au besoin */
 }
 
 .red-btn:hover {
     background-color: red !important;
 }
 
-.single-feature .icon i {
-    color: red !important;
+.feature-area .row {
+    display: flex; /* Utiliser Flexbox */
+    align-items: center; /* Aligner les éléments verticalement au centre */
+    justify-content: space-between; /* Espacement égal entre les éléments */
 }
 
-.section-title {
-    position: relative;
+.intro-text {
+    font-size: 24px; /* Taille de la police */
+    font-style: italic; /* Style en italique */
+    color: #333; /* Couleur gris foncé */
 }
-
-.feature-area-logo {
-    position: absolute;
-    right: 0;
-    top: 0;
+.title-text {
+    font-weight: bold; /* Mettre en gras */
+    font-family: Arial, sans-serif; /* Choisir une police appropriée */
+    font-size: 28px; /* Taille de la police */
 }
-
-.feature-area-logo img {
-    width: 100px; /* ou la taille que vous souhaitez */
-    height: auto;
-}
-
 /*--------------------------
 	Bande haut de page
 --------------------------*/
