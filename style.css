@@ -248,14 +248,14 @@
 }
 
 .navbar {
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 10px;
     background-color: transparent;
     box-shadow: none;
-    height: 100px;
+    height: 20px;
 }
 
 
@@ -834,3 +834,4 @@ button:hover {
     text-align: center;
     margin-bottom: 30px;
 }
+
