@@ -855,3 +855,22 @@ div strong {
     margin-right: 20px; /* Ajouter un espace à droite de l'image */
     width: 550px;
 }
+
+.slider-size {
+    height: 600px;
+}
+
+.image-eleve{
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; /* ou ajustez selon vos besoins */
+    max-width: 1200px; /* ou ajustez selon vos besoins */
+
+}
+
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
