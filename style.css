@@ -334,6 +334,14 @@
     display: block;
 }
 
+.copyright {
+    position: absolute; /* Position absolue par rapport au conteneur parent (.footer) */
+    bottom: 10px; /* Distance par rapport au bas */
+    left: 0; /* Alignement à gauche */
+    width: 100%; /* Largeur maximale */
+    text-align: center; /* Centrage du texte */
+}
+
 .sub-menu {
     left: 0;
     top: 100%;
@@ -836,3 +844,6 @@ button:hover {
     margin-bottom: 30px;
 }
 
+div strong {
+    font-weight: bold; /* Rendre le texte en gras */
+}
