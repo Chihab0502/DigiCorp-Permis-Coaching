@@ -255,7 +255,7 @@
     padding: 10px 10px;
     background-color: transparent;
     box-shadow: none;
-    height: 20px;
+    height: 30px;
 }
 
 
@@ -263,6 +263,7 @@
 .navbar-logo img {
     height: 280px;
     max-width: 100%;
+    margin-top: 20px;
 }
 
 .navbar-links {
