@@ -117,8 +117,10 @@
     color: black;
     font-size: 3em;
     font-weight: bold;
-    font-family: century-gothic, sans-serif;
+    font-family: 'Roboto Serif', serif; /* Utiliser la police Roboto */
 }
+
+
 
 
 
@@ -846,4 +848,10 @@ button:hover {
 
 div strong {
     font-weight: bold; /* Rendre le texte en gras */
+}
+
+.grande-image {
+    float: left; /* Aligner l'image à gauche */
+    margin-right: 20px; /* Ajouter un espace à droite de l'image */
+    width: 550px;
 }
