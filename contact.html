@@ -44,14 +44,14 @@
         </div>
         <br>
         <ul class="navbar-links">
-            <li><a href="#">Accueil</a></li>
+            <li><a href="index.html">Accueil</a></li>
             <li>
                 <a href="#">Tarifs</a>
                 <ul class="sub-menu">
                     <li><a href="#">Nos financements</a></li>
                 </ul>
             </li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="faq.html">FAQ</a></li>
             <li>
                 <a href="#">Mentions légales</a>
                 <ul class="sub-menu">
@@ -61,7 +61,7 @@
                     <li><a href="#">Nos Engagements</a></li>
                 </ul>
             </li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
         <br>
     </nav>
@@ -125,6 +125,16 @@
                 <input type="text" name="prenom" placeholder="Votre prénom" />
                 <input type="text" name="telephone" placeholder="Votre numéro de téléphone" />
                 <input type="text" name="email" placeholder="Votre Email" />
+                <label style=" font-family: 'Roboto Serif', serif; font-size: 14px !important;" for="forfait">Choisir un forfait :</label> <br>
+                <select  id="forfait" name="forfait">
+                    <option value="forfait1" style=" font-family: 'Roboto Serif', serif;">TARIF FORFAIT 20H </option>
+                    <option value="forfait2" style=" font-family: 'Roboto Serif', serif;">TARIF FORFAIT 30H</option>
+                    <option value="forfait3" style=" font-family: 'Roboto Serif', serif;">TARIF FORFAIT 13H</option>
+                    <option value="forfait4" style=" font-family: 'Roboto Serif', serif;">TARIF FORFAIT 20H ACCÉLERER</option>
+                    <option value="Autre" style=" font-family: 'Roboto Serif', serif;">Autre</option>
+                </select>
+                <br>
+                <br>
                 <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px;"></textarea>
                 <input type="button" name="next" class="next action-button" value="Envoyer" />
             </fieldset>
