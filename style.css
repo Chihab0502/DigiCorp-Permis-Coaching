@@ -120,10 +120,6 @@
     font-family: 'Roboto Serif', serif; /* Utiliser la police Roboto */
 }
 
-
-
-
-
 .text-container button {
     padding: 10px ;
     font-size: 1em;
@@ -698,21 +694,6 @@ button:hover {
         transition-delay: 500ms;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .wrapper-container {
     background-color: #ddd; /* Définir la couleur de fond */
