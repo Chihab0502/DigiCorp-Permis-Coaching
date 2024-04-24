@@ -84,7 +84,11 @@
 /*--------------------------
 	Bande haut de page
 --------------------------*/
-
+.imageHeader {
+    height: 300px;
+    max-width: 100%;
+    margin-top: 10px;
+}
 
 .band {
     margin-top: 50px;
