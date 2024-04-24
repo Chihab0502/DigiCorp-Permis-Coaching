@@ -32,7 +32,12 @@
     <!-- Color Style -->
     <link href="css/color/color-1.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-
+    <link
+            rel="stylesheet"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
     <title>FAQ page</title>
 </head>
 <header>
@@ -67,73 +72,123 @@
     </nav>
 </header>
 <body>
-<br>
+<div class="wrapper">
+    <h1>La Foire aux Questions</h1>
+    <p>Vous trouverez ici la réponse aux questions fréquemment posées</p>
 
-<div class="contact-container">
-    <div class="form-container">
-        <form id="msform" class="contact1">
-            <fieldset>
-                <h1 class="fs-title" style=" font-family: 'Roboto Serif', serif; font-weight: bold">À savoir en plus</h1>
-                <br>
-                <p><strong>Plusieurs manières pour nous contacter : </strong>
-                        <br>
-                        <br><strong>
-                    - Soit en remplissant le formulaire
-                    </strong>
-                        <br>
-                        <br><strong>
-                    - Soit par téléphone au :
-                    </strong>
-                        <br>
-                    09 73 26 14 07 ou 07 82 09 23 24
-                    <br>
-                    <br><strong>
-                    - Soit par mail :
-                    </strong>
-                    <br>
-                    contact@permis-coaching.com
-                    <br>
-                    <br> <strong>
-                    - Soit en vous rendant à l'adresse :
-                    </strong>
-                    <br>
-                    37 avenue Edouart Vaillant 93000 BOBIGNY
-                    <br>
-                    <br><strong>
-                    Ouverture de notre bureau :
-                    </strong>
-                    <br>
-                    Lundi au Jeudi : 10h-12h et 15-19h
-                    <br>
-                    Vendredi : 10h-12h et 15h-20h
-                    <br>
-                    Samedi : 10h-13h
-                    <br>
-                    <br><strong>
-                    Nos Heures de conduite :
-                    </strong>
-                    <br>
-                    8h-20h</p>
-            </fieldset>
-        </form>
+    <div class="faq">
+        <button class="accordion">
+            Quels sont les différents types de permis de conduire que vous proposez et quels sont les tarifs associés ?
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <p>
+                Krushi is a Public Charitable Trust designed to carry out farming on
+                extensive scale Natural & Sustainable methods.
+            </p>
+        </div>
     </div>
-    <div class="form-container">
-        <form id="msform" class="contact2">
-            <fieldset>
-                <h1 class="fs-title" style=" font-family: 'Roboto Serif', serif; font-weight: bold">CONTACTEZ-NOUS</h1>
-                <input type="text" name="nom" placeholder="Votre nom" />
-                <input type="text" name="prenom" placeholder="Votre prénom" />
-                <input type="text" name="telephone" placeholder="Votre numéro de téléphone" />
-                <input type="text" name="email" placeholder="Votre Email" />
-                <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px;"></textarea>
-                <input type="button" name="next" class="next action-button" value="Envoyer" />
-            </fieldset>
-        </form>
+
+    <div class="faq">
+        <button class="accordion">
+            Offrez-vous des cours théoriques en ligne ou doivent-ils être suivis en personne à l'auto-école ?
+
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+                saepe molestiae distinctio asperiores cupiditate consequuntur dolor
+                ullam, iure eligendi harum eaque hic corporis debitis porro
+                consectetur voluptate rem officiis architecto.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <button class="accordion">
+            Quelles sont les modalités de planification des cours pratiques et comment gérer les annulations ou les reprogrammations ?
+
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+                saepe molestiae distinctio asperiores cupiditate consequuntur dolor
+                ullam, iure eligendi harum eaque hic corporis debitis porro
+                consectetur voluptate rem officiis architecto.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <button class="accordion">
+            Quel est le taux de réussite de vos élèves à l'examen du permis de conduire ?
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+                saepe molestiae distinctio asperiores cupiditate consequuntur dolor
+                ullam, iure eligendi harum eaque hic corporis debitis porro
+                consectetur voluptate rem officiis architecto.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <button class="accordion">
+            Proposez-vous des formations ou des cours spéciaux pour surmonter la peur de conduire ou pour les conducteurs seniors ?
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+                saepe molestiae distinctio asperiores cupiditate consequuntur dolor
+                ullam, iure eligendi harum eaque hic corporis debitis porro
+                consectetur voluptate rem officiis architecto.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <button class="accordion">
+            Comment votre auto-école accommode-t-elle les apprenants avec des besoins spécifiques, comme des adaptations pour les handicaps physiques ?
+
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+                saepe molestiae distinctio asperiores cupiditate consequuntur dolor
+                ullam, iure eligendi harum eaque hic corporis debitis porro
+                consectetur voluptate rem officiis architecto.
+            </p>
+        </div>
     </div>
 </div>
 
-<br>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            this.parentElement.classList.toggle("active");
+
+            var pannel = this.nextElementSibling;
+
+            if (pannel.style.display === "block") {
+                pannel.style.display = "none";
+            } else {
+                pannel.style.display = "block";
+            }
+        });
+    }
+</script>
 </body>
+
 <footer style="position: relative;">
     <div class="footer-left">
         <!-- Logo -->
