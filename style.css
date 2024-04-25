@@ -5,6 +5,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-right {
+    animation: slideInFromRight 1s ease-out;
+}
+
+.slide-left {
+    animation: slideInFromLeft 1s ease-out;
+}
+
+
 .image-content {
     text-align: center; /* Centrer le contenu */
 }
@@ -84,6 +116,20 @@
 /*--------------------------
 	Bande haut de page
 --------------------------*/
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bande-haut-page{
+    animation: fadeIn 2s ease-in-out;
+}
+
 .imageHeader {
     height: 300px;
     max-width: 100%;
