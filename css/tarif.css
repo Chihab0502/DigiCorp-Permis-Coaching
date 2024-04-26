@@ -242,7 +242,7 @@ div strong {
 .ag-courses-item_link:hover .ag-courses-item_bg {
     -webkit-transform: scale(10);
     -ms-transform: scale(100);
-    transform: scale(12);  /* Remplissage de bulle */
+    transform: scale(15);  /* Remplissage de bulle */
 }
 
 .ag-courses-item_title {
@@ -296,6 +296,10 @@ div strong {
 
 .ag-courses_item:nth-child(4n) .ag-courses-item_bg {
     background-color: deeppink;
+}
+
+.ag-courses_item:nth-child(5n) .ag-courses-item_bg {
+    background-color: green;
 }
 
 
