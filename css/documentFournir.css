@@ -199,6 +199,8 @@ div strong {
 #msform {
     width: 1200px;
     margin: 4% 9%;
+    margin-left: 20%;
+    margin-right: 20%;
     text-align: center;
     position: relative;
 }

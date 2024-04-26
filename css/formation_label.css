@@ -1,0 +1,57 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Espace entre les blocs */
+}
+
+.title {
+    font-family: 'Roboto Serif', serif;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 100%; /* Pour s'assurer que le titre prenne toute la largeur */
+}
+
+.formation-block {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    flex: 1; /* Flexibilité pour grandir et s'adapter */
+    min-width: calc(50% - 0.5rem); /* Pour s'assurer que deux blocs tiennent dans une ligne, en tenant compte du gap */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Effet d'ombre douce */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transition douce pour l'effet hover */
+
+}
+.formation-block:hover {
+    background-color: #ffe5e5; /* Changement de couleur au survol */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2); /* Ombre plus prononcée au survol */
+}
+
+.formation-block p{
+    padding-top: 2%;
+    font-size: 17px
+}
+
+.formation-title {
+    font-family: 'Roboto Serif', serif;
+    color: #212121;
+    margin-bottom: .5rem;
+}
+
+.formation-text {
+    font-family: 'Roboto', sans-serif;
+    color: #212121;
+    line-height: 1.6;
+}
+
+.text-with-arrow::before {
+    content: '➤ '; /* Caractère de flèche */
+    color: #212121; /* Couleur de la flèche */
+    padding-right: 8px; /* Espace entre la flèche et le texte */
+    font-size: 1.2rem; /* Taille de la flèche ajustée */
+}
