@@ -55,3 +55,69 @@
     padding-right: 8px; /* Espace entre la flèche et le texte */
     font-size: 1.2rem; /* Taille de la flèche ajustée */
 }
+
+
+
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Espace entre les blocs */
+}
+
+.title {
+    font-family: 'Roboto Serif', serif;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 100%; /* Pour s'assurer que le titre prenne toute la largeur */
+}
+
+.criteres-block {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    flex: 1; /* Flexibilité pour grandir et s'adapter */
+    min-width: calc(50% - 0.5rem); /* Pour s'assurer que deux blocs tiennent dans une ligne, en tenant compte du gap */
+    display: flex;
+    flex-direction: column; /* Organise le contenu en colonne */
+    align-items: center; /* Centre horizontalement le contenu dans le bloc */
+}
+
+.criteres-title {
+    font-family: 'Roboto Serif', serif;
+    color: #212121;
+    margin-bottom: .5rem;
+}
+
+.criteres-text {
+    font-family: 'Roboto', sans-serif;
+    color: #212121;
+    line-height: 1.6;
+}
+
+.pdf-button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem; /* Ajoute un espace entre le texte et le bouton */
+}
+
+.pdf-button:hover {
+    background-color: #cc5656;
+}
