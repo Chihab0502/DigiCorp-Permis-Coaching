@@ -1,0 +1,70 @@
+.bande-haut-page {
+    position: relative;
+}
+
+.bande-haut-page img {
+    width: 100vw; /* Largeur à 100% du viewport */
+    height: 100vh; /* Hauteur à 100% du viewport */
+    object-fit: cover; /* Garde les proportions, peut couper l'image si nécessaire */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur foncée semi-transparente */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1; /* Définir un z-index supérieur */
+}
+
+.content h1, .content h2 {
+    margin: 0;
+    animation: reveal 3s ease forwards; /* Utiliser l'animation "reveal" */
+}
+
+.content h1 {
+    font-size: 5em; /* Taille du titre */
+    color: white; /* Couleur du titre */
+    font-family: 'Roboto Serif', serif; /* Police du titre */
+}
+
+.content h2 {
+    font-size: 4em; /* Taille du sous-titre */
+    color: #b30000; /* Couleur du sous-titre */
+    margin-top: 20px; /* Espace entre le titre et le sous-titre */
+    font-family: 'Roboto Serif', serif; /* Police du sous-titre */
+}
+
+.content h2::before {
+    content: ""; /* Contenu vide */
+    position: absolute; /* Position absolue pour placer le carré */
+    top: 50%; /* Aligner au centre verticalement */
+    left: 50%; /* Aligner au centre horizontalement */
+    transform: translate(-50%, -50%); /* Centrer le carré */
+    width: calc(100% + 20px); /* Largeur du carré (100% de la largeur du sous-titre plus un peu de marge) */
+    height: calc(100% + 20px); /* Hauteur du carré (100% de la hauteur du sous-titre plus un peu de marge) */
+    background-color: white; /* Couleur du carré */
+    z-index: -1; /* Placer le carré en arrière-plan */
+    border-radius: 5px; /* Ajouter des coins arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ajouter une ombre */
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px); /* Déplacer vers le haut */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Annuler le déplacement */
+    }
+}
