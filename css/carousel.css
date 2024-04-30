@@ -1,0 +1,26 @@
+.card.mx-auto {
+    max-width: 100%;  /* Ajustez ceci selon la largeur désirée */
+}
+
+.carousel-item .row {
+    display: flex;
+    justify-content: center;
+}
+
+/* Ajustement pour un meilleur centrage et responsive design */
+@media (max-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.5); /* Ajoute un fond sombre pour les icones */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Rend les zones cliquables plus larges */
+}

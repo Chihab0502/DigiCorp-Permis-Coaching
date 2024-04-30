@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="./css/accueil.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/Navbar.css">
+    <link rel="stylesheet" href="./css/carousel.css">
     <!-- Responsive CSS
     ============================================ -->
     <link rel="stylesheet" href="css/responsive.css">
@@ -253,78 +254,77 @@
 </div>
 
 <!-- Pas Encore Fait-->
-<div class="wrapper-container">
-    <div class="finance-paiement">
-        <div class="wrapper">
-            <br>
-            <center><h3 style=" font-family: 'Roboto Serif', serif;"><b>Nos Options de Financement</b></h3></center><br>
-            <ul class="carousel">
-                <li class="card">
-                    <div class="img"><img src="./img/gallery/IMG_2230.png" alt="image CPF" draggable="false"></div>
-                    <h2>Compte formation</h2>
-                </li>
-                <li class="card">
-                    <div class="img"><img src="./img/gallery/IMG_2231.png" alt="image pole emploi" draggable="false"></div>
-                    <h2>Pôle emploi</h2>
-                </li>
-                <li class="card">
-                    <div class="img"><img src="./img/gallery/IMG_2232.png" alt="image permis 1e/j" draggable="false"></div>
-                    <h2>Permis 1€ par jour</h2>
-                </li>
-                <li class="card">
-                    <div class="img"><img src="./img/gallery/logo-idf-2019.jpg.png" alt="image region idf" draggable="false"></div>
-                    <h2>Région Île-de-France</h2>
-                </li>
-                <li class="card">
-                    <div class="img"><img src="./img/gallery/IMG_2235.png" alt="image paiement 3x sans frais" draggable="false"></div>
-                    <h2>Paiement 3x sans frais</h2>
-                </li>
-            </ul>
-            <i id="left" class="fa-solid fa-angle-left"></i>
-            <i id="right" class="fa-solid fa-angle-right"></i>
+<div class="container my-5"> <!-- Container pour ajouter de l'espace autour du carrousel -->
+    <div class="row">
+        <div class="col-12 text-center"> <!-- Centrage du titre -->
+            <h3 style="font-family: 'Roboto Serif', serif; padding:2%"><b>Nos Options de Financement</b></h3>
         </div>
-
     </div>
-    <div class="partenaires">
-        <div class="wrapper">
-            <h2 style=" font-family: 'Roboto Serif', serif;"><b>Nos Partenaires</b></h2>
-
-            <ul class="carousel">
-                <li class="card">
-                    <div class="img"><img src="./img/gallery/peugeot-logo.png" alt="logo peugeot" draggable="false"></div>
-                    <h2>Peugeot</h2>
-                </li>
-                <li class="card">
-                    <div class="img"><img src="./img/gallery/BNP_Paribas.svg.png" alt="logo bnp" draggable="false"></div>
-                    <h2>BNP Paribas</h2>
-                </li>
-                <li class="card">
-                    <div class="img"><img src="./img/gallery/planete-permis-logo.png" alt="logo planete permis" draggable="false"></div>
-                    <h2>Planète Permis</h2>
-                </li>
-                <li class="card">
-                    <div class="img"><img src="./img/gallery/IMG_2225.PNG" alt="logo Ofracar" draggable="false"></div>
-                    <h2>OFRACAR Assurance</h2>
-                </li>
-                <li class="card">
-                    <div class="img"><img src="./img/gallery/Logo-AGX.png" alt="logo AGX" draggable="false"></div>
-                    <h2>AGX Informatique</h2>
-                </li>
-                <li class="card">
-                    <div class="img"><img src="./img/gallery/logo-citroen.png" alt="logo citroën" draggable="false"></div>
-                    <h2>Citroën</h2>
-                </li>
-                <li class="card">
-                    <div class="img"><img src="./img/gallery/logo_monceau.png" alt="logo Monceau" draggable="false"></div>
-                    <h2>Monceau Assurances</h2>
-                </li>
-            </ul>
-            <i id="left_bis" class="fa-solid fa-angle-left"></i>
-            <i id="right_bis" class="fa-solid fa-angle-right"></i>
-        </div><br>
+    <div id="carouselCards" class="carousel slide" data-bs-interval="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="./img/gallery/IMG_2230.png" class="card-img-top" alt="image CPF">
+                            <div class="card-body mt-auto">
+                                <h5 class="card-title">Compte formation</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="./img/gallery/IMG_2231.png" class="card-img-top" alt="image pole emploi">
+                            <div class="card-body mt-auto">
+                                <h5 class="card-title">Pôle emploi</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="./img/gallery/IMG_2232.png" class="card-img-top" alt="image permis 1€/j">
+                            <div class="card-body mt-auto">
+                                <h5 class="card-title">Permis 1€ par jour</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="./img/gallery/logo-idf-2019.jpg.png" class="card-img-top" alt="image region idf">
+                            <div class="card-body mt-auto">
+                                <h5 class="card-title">Région Île-de-France</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="./img/gallery/IMG_2235.png" class="card-img-top" alt="image paiement 3x sans frais">
+                            <div class="card-body mt-auto">
+                                <h5 class="card-title">Paiement 3x sans frais</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Plus de cartes ou espace vide si nécessaire -->
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCards" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Précédent</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCards" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Suivant</span>
+        </button>
     </div>
-
 </div>
+
+
+
 
 <!-- Fait mais pas de css encore -->
 <div class="image-eleve">
@@ -382,7 +382,6 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
 
 
