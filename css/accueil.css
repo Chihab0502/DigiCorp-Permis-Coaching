@@ -379,21 +379,14 @@ button:hover {
 
 /* PARTIE BANDE DE PAGE */
 
-.btn.btn-danger:hover {
+.btn.btn-danger:hover{
     background-color: #ff4444; /* Couleur de survol */
     border-color: #ff4444; /* Couleur de bordure de survol */
     color: #ffffff; /* Couleur du texte de survol */
 }
 
-
-
 /* FIN PARTIE BANDE DE PAGE */`
 
-/* PARTIE IMAGE CLIENT */
-
-
-
-/* FIN PARTIE IMAGE CLIENT */
 
 /* ----------------------------
     Partenaire & financement
