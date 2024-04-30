@@ -46,7 +46,6 @@
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
-    <script src="./js/carrousel.js" defer></script>
     <script src="./js/image-slider.js" defer></script>
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
@@ -265,7 +264,7 @@
             <div class="carousel-item active">
                 <div class="row justify-content-center">
                     <div class="col-md-6 col-lg-4">
-                        <div class="card mx-auto" style="width: 18rem;">
+                        <div class="card mx-auto">
                             <img src="./img/gallery/IMG_2230.png" class="card-img-top" alt="image CPF">
                             <div class="card-body mt-auto">
                                 <h5 class="card-title">Compte formation</h5>
@@ -273,7 +272,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
-                        <div class="card mx-auto" style="width: 18rem;">
+                        <div class="card mx-auto">
                             <img src="./img/gallery/IMG_2231.png" class="card-img-top" alt="image pole emploi">
                             <div class="card-body mt-auto">
                                 <h5 class="card-title">Pôle emploi</h5>
@@ -281,7 +280,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
-                        <div class="card mx-auto" style="width: 18rem;">
+                        <div class="card mx-auto">
                             <img src="./img/gallery/IMG_2232.png" class="card-img-top" alt="image permis 1€/j">
                             <div class="card-body mt-auto">
                                 <h5 class="card-title">Permis 1€ par jour</h5>
@@ -293,7 +292,7 @@
             <div class="carousel-item">
                 <div class="row justify-content-center">
                     <div class="col-md-6 col-lg-4">
-                        <div class="card mx-auto" style="width: 18rem;">
+                        <div class="card mx-auto">
                             <img src="./img/gallery/logo-idf-2019.jpg.png" class="card-img-top" alt="image region idf">
                             <div class="card-body mt-auto">
                                 <h5 class="card-title">Région Île-de-France</h5>
@@ -301,7 +300,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
-                        <div class="card mx-auto" style="width: 18rem;">
+                        <div class="card mx-auto">
                             <img src="./img/gallery/IMG_2235.png" class="card-img-top" alt="image paiement 3x sans frais">
                             <div class="card-body mt-auto">
                                 <h5 class="card-title">Paiement 3x sans frais</h5>
@@ -323,14 +322,85 @@
     </div>
 </div>
 
-
-
+<div class="container my-5 partenaires">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2 style="font-family: 'Roboto Serif', serif; padding:2%"><b>Nos Partenaires</b></h2>
+        </div>
+    </div>
+    <div id="carouselPartners" class="carousel slide" data-bs-interval="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mx-auto">
+                            <img src="./img/gallery/peugeot-logo.png" class="card-img-top" alt="logo peugeot">
+                            <div class="card-body mt-auto">
+                                <h5 class="card-title">Peugeot</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mx-auto">
+                            <img src="./img/gallery/BNP_Paribas.svg.png" class="card-img-top" alt="logo bnp">
+                            <div class="card-body mt-auto">
+                                <h5 class="card-title">BNP Paribas</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mx-auto">
+                            <img src="./img/gallery/planete-permis-logo.png" class="card-img-top" alt="logo planete permis">
+                            <div class="card-body mt-auto">
+                                <h5 class="card-title">Planète Permis</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Ajoutez d'autres carousel-items si nécessaire pour plus de partenaires -->
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mx-auto">
+                            <img src="./img/gallery/IMG_2225.PNG" class="card-img-top" alt="logo Ofracar">
+                            <div class="card-body mt-auto">
+                                <h5 class="card-title">OFRACAR Assurance</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mx-auto">
+                            <img src="./img/gallery/Logo-AGX.png" class="card-img-top" alt="logo AGX">
+                            <div class="card-body mt-auto">
+                                <h5 class="card-title">AGX Informatique</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mx-auto">
+                            <img src="./img/gallery/logo-citroen.png" class="card-img-top" alt="logo citroën">
+                            <div class="card-body mt-auto">
+                                <h5 class="card-title">Citroën</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPartners" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPartners" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+</div>
 
 <!-- Fait mais pas de css encore -->
 <div class="image-eleve">
     <section class="carousel-fixed-height">
         <div id="carousel-fixed-height" class="carousel slide" data-ride="carousel">
-            <center><h2 style=" font-family: 'Roboto Serif', serif;"><b>Nos Partenaires</b></h2> </center><br>
             <center> <p><b> <h3 style=" font-family: 'Roboto Serif', serif;"> Ils ont fait confiance à Permis Coaching et vous 🫵 ?</h3></b></p></center><br>
             <ol class="carousel-indicators">
                 <li data-target="#carousel-fixed-height" data-slide-to="0" class=""></li>

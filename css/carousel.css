@@ -1,6 +1,44 @@
+.card {
+    margin: 10px; /* Ajoute une petite marge autour de la carte pour éviter qu'elles se touchent */
+
+    display: flex;
+    flex-direction: column; /* Organise le contenu de la carte en colonne */
+    height: 100%; /* Assure que toutes les cartes ont la même hauteur */
+}
+
+.card-body {
+    margin-top: auto; /* Pousse le contenu du corps vers le bas */
+    padding: 0.5rem; /* Ajustez le padding selon vos besoins */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-img-top {
+    max-height: 120px; /* Ajustez la hauteur de l'image si nécessaire */
+    width: 100%; /* Assure que l'image couvre la largeur de la carte */
+    object-fit: cover; /* Couvre l'espace disponible sans déformer l'image */
+}
+
 .card.mx-auto {
     max-width: 100%;  /* Ajustez ceci selon la largeur désirée */
+    width: 15rem; /* Uniformiser la largeur de toutes les cartes */
+    height: 14rem;
+
 }
+.card-img-top {
+    height: 120px; /* Réduire la hauteur fixe des images si nécessaire */
+    object-fit: cover; /* Couvre l'espace disponible sans déformer l'image */
+    width: 70%; /* Assure que l'image couvre la largeur de la carte */
+}
+
+.carousel-item .col-md-6.col-lg-4 {
+    padding-right: 5px; /* Réduit l'espace à droite de la carte */
+    padding-left: 5px; /* Réduit l'espace à gauche de la carte */
+}
+
 
 .carousel-item .row {
     display: flex;
