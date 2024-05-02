@@ -2,7 +2,7 @@
     position: relative;
 }
 
-.bande-haut-page img {
+.img-fluid {
     width: 100vw; /* Largeur à 100% du viewport */
     height: 100vh; /* Hauteur à 100% du viewport */
     object-fit: cover; /* Garde les proportions, peut couper l'image si nécessaire */
@@ -66,5 +66,28 @@
     100% {
         opacity: 1;
         transform: translateY(0); /* Annuler le déplacement */
+    }
+}
+
+.scroll-icon {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    width: 70px;  /* Ajustez la taille si nécessaire */
+    z-index: 10;  /* Assurez-vous que ce z-index est supérieur à celui de tous les éléments sous-jacents */
+    cursor: pointer;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-20px);
+    }
+    60% {
+        transform: translateX(-50%) translateY(-10px);
     }
 }
