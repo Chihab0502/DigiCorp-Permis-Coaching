@@ -1,3 +1,34 @@
+/* Style lorsque la navbar est en haut de la page d'accueil */
+.navbar-top {
+    background-color: transparent !important; /* Assure la transparence */
+}
+
+.navbar-top .navbar-brand {
+    background-color: white; /* Fond blanc pour le logo */
+    padding: 5px; /* Petit rembourrage autour du logo pour le distinguer */
+    border-radius: 5px; /* Bordures arrondies si désiré */
+}
+
+
+.navbar-top .nav-link {
+    color: white !important; /* Change la couleur du texte en blanc */
+}
+
+.navbar-top .nav-link:hover {
+    color: red !important; /* Change la couleur du texte en blanc */
+}
+
+/* Style de base des liens de la navbar */
+.nav-link {
+    color: #333; /* Couleur de base des liens */
+}
+
+
+/* Style de base de la navbar (pour rappel) */
+.navbar {
+    background-color: #f8f9fa; /* Couleur de fond par défaut, adapte selon ton design */
+}
+
 /* Assure-toi que le logo ait une taille fixe plus grande */
 .navbar-brand img {
     height: 100px; /* Taille du logo */
@@ -70,7 +101,6 @@
     padding: 10px 20px;
     font-size: 16px;
     color: #333;
-    transition: background-color 0.3s ease;
 }
 
 /* Style des éléments du sous-menu au survol */
