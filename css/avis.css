@@ -38,12 +38,17 @@
     background-color: #fff;
     color: #900C3F;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 15px; /* Ajustez le padding ici si nécessaire */
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    border-radius: 20px; /* Bords arrondis */
+    display: inline-block; /* Bloc en ligne */
+    text-align: center; /* Texte centré */
+    line-height: 1.5; /* Hauteur de ligne pour le centrage vertical */
+    width: 220px; /* Augmentez la largeur si le texte ne s'ajuste pas */
 }
 
 .avis-section button:hover {
-    background-color: #e7e7e7;
+    background-color: #ffc9ce; /* Couleur au survol modifiée */
 }
