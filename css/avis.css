@@ -1,0 +1,49 @@
+.avis-section {
+    margin-top: 2%;
+    background: linear-gradient(to bottom, red, #900C3F); /* Gradient background */
+    color: white;
+    padding: 40px 0;
+}
+
+.avis-rating {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.rating-number {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.stars {
+    margin: 0 10px;
+    color: gold;
+}
+
+.avis-count {
+    font-size: 1.2rem;
+}
+
+.avis-section h2 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.avis-section p {
+    margin-bottom: 20px;
+}
+
+.avis-section button {
+    background-color: #fff;
+    color: #900C3F;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.avis-section button:hover {
+    background-color: #e7e7e7;
+}
