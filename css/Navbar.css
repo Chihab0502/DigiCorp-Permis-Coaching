@@ -64,7 +64,7 @@
 /* Adapter l'espacement sur les écrans plus grands */
 @media (min-width: 992px) {
     .navbar-brand {
-        margin-left: 25%; /* Décaler le logo vers le 1/3 de l'écran */
+        margin-left: 15%; /* Décaler le logo vers le 1/3 de l'écran */
         margin-right: 20rem; /* Grand espace entre le logo et le reste de la navbar */
     }
 }
