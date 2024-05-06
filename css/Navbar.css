@@ -45,6 +45,7 @@
 }
 
 /* Centrer verticalement le logo */
+
 .navbar-brand {
     display: flex;
     align-items: center;
