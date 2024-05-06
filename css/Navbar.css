@@ -42,6 +42,7 @@
     width: 100%; /* Occupe toute la largeur de la fenêtre */
     z-index: 1000; /* Assure que la navbar soit au-dessus des autres éléments */
     top: 0; /* Aligne la navbar en haut de la fenêtre */
+
 }
 
 /* Centrer verticalement le logo */
