@@ -1,3 +1,7 @@
+body, html, header, .navbar {
+    margin: 0;
+    padding: 0;
+}
 /* Style lorsque la navbar est en haut de la page d'accueil */
 .navbar-top {
     background-color: transparent !important; /* Assure la transparence */

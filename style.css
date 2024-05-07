@@ -104,7 +104,7 @@
 }
 
 .intro-text {
-    font-size: 24px; /* Taille de la police */
+    font-size: 300px; /* Taille de la police */ !important;
     font-style: italic; /* Style en italique */
     color: #333; /* Couleur gris foncé */
 }
