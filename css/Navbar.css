@@ -15,7 +15,7 @@
 }
 
 .navbar-top .nav-link:hover {
-    color: red !important; /* Change la couleur du texte en blanc */
+    color: #900C3F !important; /* Change la couleur du texte en blanc */
 }
 
 /* Style de base des liens de la navbar */
@@ -112,7 +112,7 @@
 
 .nav-link:hover,
 .dropdown-menu .dropdown-item:hover {
-    color: red; /* Changement de couleur au survol */
+    color: #900C3F; /* Changement de couleur au survol */
 }
 
 
