@@ -274,7 +274,7 @@ div strong {
 .ag-courses-item_bg {
     height: 128px;
     width: 128px;
-    background-color: #f9b234;
+    background-color: #900C3F;
 
     z-index: 1;
     position: absolute;
@@ -288,10 +288,10 @@ div strong {
     transition: all .5s ease;
 }
 .ag-courses_item:nth-child(2n) .ag-courses-item_bg {
-    background-color: #952aff;
+    background-color: #900C3F;
 }
 .ag-courses_item:nth-child(3n) .ag-courses-item_bg {
-    background-color: #e44002;
+    background-color: #900C3F;
 }
 
 .ag-courses_item:nth-child(4n) .ag-courses-item_bg {
