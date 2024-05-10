@@ -1,6 +1,7 @@
 body, html, header, .navbar {
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
 }
 /* Style lorsque la navbar est en haut de la page d'accueil */
 .navbar-top {
