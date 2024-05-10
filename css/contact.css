@@ -1,137 +1,88 @@
-/*form styles*/
-#msform {
-    width: 400px;
-    margin: 50px auto;
-    text-align: center;
-    position: relative;
+:root {
+    /* Couleurs */
+    --primary-color: #900C3F;  /* Couleur principale modifiée pour un rouge plus foncé */
+    --background-color: #fff;  /* Couleur de fond pour les sections */
+    --text-color: #333;        /* Couleur de texte principale */
+    --footer-background-color: #ddd; /* Couleur de fond du pied de page */
+
+    /* Polices */
+    --heading-font: 'Roboto Serif', serif;
+    --body-font: 'Lato', sans-serif;
 }
-#msform fieldset {
-    background: white;
-    border: 0 none;
-    border-radius: 3px;
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+}
+
+.action-button {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.action-button:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+.form-section {
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: .5rem;
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
-    padding: 20px 30px;
-    box-sizing: border-box;
-    width: 80%;
-    margin: 0 10%;
+    margin-bottom: 20px; /* Espacement entre les sections */
+}
 
-    /*stacking fieldsets above each other*/
-    position: relative;
-}
-/*Hide all except first fieldset*/
-#msform fieldset:not(:first-of-type) {
-    display: none;
-}
-/*inputs*/
-#msform input, #msform textarea {
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    margin-bottom: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    font-family: montserrat;
-    color: #2C3E50;
-    font-size: 13px;
-}
-/*buttons*/
-#msform .action-button {
-    width: 100px;
-    background: #27AE60;
+.contact-header {
+    font-family: var(--heading-font);
     font-weight: bold;
-    color: white;
-    border: 0 none;
-    border-radius: 1px;
-    cursor: pointer;
-    padding: 10px;
-    margin: 10px 5px;
-    text-decoration: none;
-    font-size: 14px;
+    color: var(--primary-color);
 }
-#msform .action-button:hover, #msform .action-button:focus {
-    box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+
+.container-decaled {
+    margin-top: 15vh; /* Ajoute une marge supérieure de 15% de la hauteur de la fenêtre */
 }
-/*headings*/
-.fs-title {
-    font-size: 19px;
-    text-transform: uppercase;
-    color: #2C3E50;
-    margin-bottom: 10px;
+
+input.form-control, textarea.form-control {
+    border: 1px solid #ccc; /* Couleur de bordure initiale */ !important;
 }
-.fs-subtitle {
-    font-weight: normal;
-    font-size: 17px;
-    color: #666;
-    margin-bottom: 20px;
+
+input.form-control:focus, textarea.form-control:focus {
+    border-color: #900C3F; /* Rouge foncé */
+    outline: none;
+    box-shadow: 0 0 0 2px #900C3F;
 }
-/*progressbar*/
-#progressbar {
-    margin-bottom: 30px;
-    overflow: hidden;
-    /*CSS counters to number the steps*/
-    counter-reset: step;
+
+body {
+    background: url('../img/gallery/Design.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    width: 99.2vw;
+    overflow: auto;
 }
-#progressbar li {
-    list-style-type: none;
-    color: white;
-    text-transform: uppercase;
-    font-size: 9px;
-    width: 33.33%;
-    float: left;
+
+/* Filtre sombre */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+}
+
+/* Assurer que le contenu est visible au-dessus du filtre */
+.container, footer {
     position: relative;
-}
-#progressbar li:before {
-    content: counter(step);
-    counter-increment: step;
-    width: 20px;
-    line-height: 20px;
-    display: block;
-    font-size: 10px;
-    color: #333;
-    background: white;
-    border-radius: 3px;
-    margin: 0 auto 5px auto;
-}
-/*progressbar connectors*/
-#progressbar li:after {
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: white;
-    position: absolute;
-    left: -50%;
-    top: 9px;
-    z-index: -1; /*put it behind the numbers*/
-}
-#progressbar li:first-child:after {
-    /*connector not needed before the first step*/
-    content: none;
-}
-/*marking active/completed steps green*/
-#progressbar li.active:before,  #progressbar li.active:after{
-    background: #27AE60;
-    color: white;
+    z-index: 1;
 }
 
-
-.contact-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 25px;
-}
-
-.form-container {
-    width: 95%; /* Réglage de la largeur des formulaires */
-}
-
-.msform {
-    text-align: left;
-}
-
-.form-container {
-    width: calc(50% - 10px) !important; /* Réglage de la largeur des formulaires avec un espace de 10px entre eux */
-    margin-right: -5px !important; /* Espace entre les formulaires */
-}
 
 
 /* Styles pour le footer */

@@ -68,91 +68,71 @@
                     </div>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="contact.html">Nous contacter</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 </header>
 <body>
-<br>
-
-<div class="contact-container">
-    <div class="form-container">
-        <form id="msform" class="contact1">
-            <fieldset>
-                <h1 class="fs-title" style=" font-family: 'Roboto Serif', serif; font-weight: bold">À savoir en plus</h1>
-                <br>
-                <p><strong>Plusieurs manières pour nous contacter : </strong>
+<div class="container py-5 container-decaled">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="form-section">
+                <h1 class="contact-header fs-4 mb-3">À savoir en plus</h1>
+                <p>
+                    <strong>Plusieurs manières pour nous contacter :</strong>
+                    <br>- Soit en remplissant le formulaire
+                    <br>- Soit par téléphone au : 09 73 26 14 07 ou 07 82 09 23 24
+                    <br>- Soit par mail : contact@permis-coaching.com
+                    <br>- Soit en vous rendant à l'adresse : 37 avenue Edouart Vaillant 93000 BOBIGNY
                     <br>
-                    <br><strong>
-                        - Soit en remplissant le formulaire
-                    </strong>
+                    <strong>Ouverture de notre bureau :</strong>
+                    <br>Lundi au Jeudi : 10h-12h et 15-19h
+                    <br>Vendredi : 10h-12h et 15h-20h
+                    <br>Samedi : 10h-13h
                     <br>
-                    <br><strong>
-                        - Soit par téléphone au :
-                    </strong>
-                    <br>
-                    09 73 26 14 07 ou 07 82 09 23 24
-                    <br>
-                    <br><strong>
-                        - Soit par mail :
-                    </strong>
-                    <br>
-                    contact@permis-coaching.com
-                    <br>
-                    <br> <strong>
-                        - Soit en vous rendant à l'adresse :
-                    </strong>
-                    <br>
-                    37 avenue Edouart Vaillant 93000 BOBIGNY
-                    <br>
-                    <br><strong>
-                        Ouverture de notre bureau :
-                    </strong>
-                    <br>
-                    Lundi au Jeudi : 10h-12h et 15-19h
-                    <br>
-                    Vendredi : 10h-12h et 15h-20h
-                    <br>
-                    Samedi : 10h-13h
-                    <br>
-                    <br><strong>
-                        Nos Heures de conduite :
-                    </strong>
-                    <br>
-                    8h-20h</p>
-            </fieldset>
-        </form>
-    </div>
-    <div class="form-container">
-        <form id="msform" class="contact2">
-            <fieldset>
-                <h1 class="fs-title" style=" font-family: 'Roboto Serif', serif; font-weight: bold">CONTACTEZ-NOUS</h1>
-                <input type="text" name="nom" placeholder="Votre nom" />
-                <input type="text" name="prenom" placeholder="Votre prénom" />
-                <input type="text" name="telephone" placeholder="Votre numéro de téléphone" />
-                <input type="text" name="email" placeholder="Votre Email" />
-                <label style=" font-family: 'Roboto Serif', serif; font-size: 14px !important;" for="forfait">Choisir un forfait :</label> <br>
-                <select  id="forfait" name="forfait">
-                    <option value="forfait1" style=" font-family: 'Roboto Serif', serif;">TARIF FORFAIT 20H </option>
-                    <option value="forfait2" style=" font-family: 'Roboto Serif', serif;">TARIF FORFAIT 30H</option>
-                    <option value="forfait3" style=" font-family: 'Roboto Serif', serif;">TARIF FORFAIT 13H</option>
-                    <option value="forfait4" style=" font-family: 'Roboto Serif', serif;">TARIF FORFAIT 20H ACCÉLERER</option>
-                    <option value="Autre" style=" font-family: 'Roboto Serif', serif;">Autre</option>
-                </select>
-                <br>
-                <br>
-                <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px;"></textarea>
-                <input type="button" name="next" class="next action-button" value="Envoyer" />
-            </fieldset>
-        </form>
+                    <strong>Nos Heures de conduite :</strong>
+                    <br>8h-20h
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-section">
+                <h1 class="contact-header fs-4 mb-3">CONTACTEZ-NOUS</h1>
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" name="nom" placeholder="Votre nom">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" name="prenom" placeholder="Votre prénom">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" name="telephone" placeholder="Votre numéro de téléphone">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" name="email" placeholder="Votre Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="forfait" class="form-label">Choisir un forfait :</label>
+                        <select class="form-select" id="forfait" name="forfait">
+                            <option value="forfait1">TARIF FORFAIT 20H</option>
+                            <option value="forfait2">TARIF FORFAIT 30H</option>
+                            <option value="forfait3">TARIF FORFAIT 13H</option>
+                            <option value="forfait4">TARIF FORFAIT 20H ACCÉLERER</option>
+                            <option value="Autre">Autre</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" id="subject" name="subject" placeholder="Votre message" style="height:200px;"></textarea>
+                    </div>
+                    <button type="button" class="btn action-button">Envoyer</button>
+                </form>
+            </div>
+        </div>
     </div>
 </div>
-
-<br>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
 </body>
 <footer style="position: relative;">
     <div class="footer-left">

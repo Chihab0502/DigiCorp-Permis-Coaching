@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 
 /* Styles pour le footer */
@@ -104,7 +104,9 @@ div strong {
     --font-text: "Lato", sans-serif;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+
+
 * {
     padding: 0;
     margin: 0;
@@ -132,7 +134,7 @@ div strong {
     background-color: white;
     color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     width: 100%;
     padding: 2rem 2.5rem;
     border: none;
@@ -145,23 +147,22 @@ div strong {
 }
 
 .accordion i {
-    font-size: 1.6rem;
+    font-size: 1rem;
 }
 
 .active,
 .accordion:hover {
-    background-color: #F76D6D;
+    background-color: #e76a8c;
 }
 .pannel {
     padding: 0 2rem 2.5rem 2rem;
-    background-color: white;
     overflow: hidden;
-    background-color: #F76D6D;
+    background-color: #e76a8c;
     display: none;
 }
 .pannel p {
     color: rgba(0, 0, 0, 0.7);
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     line-height: 1.4;
 }
 
