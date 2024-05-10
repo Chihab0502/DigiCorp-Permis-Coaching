@@ -41,11 +41,11 @@ body, html, header, .navbar {
 
 /* Définir une hauteur fixe pour la navbar */
 .navbar {
-    height: 150px; /* Ajuste cette valeur selon la taille de ton logo */
-    position: fixed; /* Fixe la navbar en haut de la fenêtre */
-    width: 100%; /* Occupe toute la largeur de la fenêtre */
-    z-index: 1000; /* Assure que la navbar soit au-dessus des autres éléments */
-    top: 0; /* Aligne la navbar en haut de la fenêtre */
+    height: 150px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
 
 }
 
