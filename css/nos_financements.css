@@ -126,9 +126,9 @@ div strong {
 }
 
 h1 {
-    color: #900C3F;  /* Couleur rouge vineux pour correspondre au thème */
+    color: black;  /* Couleur rouge vineux pour correspondre au thème */
     text-align: center;  /* Centrer le titre dans la page */
-    font-size: 2.5rem;  /* Taille de la police, ajuste selon le besoin */
+    font-size: 2.8rem;  /* Taille de la police, ajuste selon le besoin */
     font-weight: bold;  /* Gras pour le rendre plus visible */
     margin-top: 20px;  /* Marge au-dessus du titre */
     margin-bottom: 20px;  /* Marge en dessous du titre */
@@ -154,8 +154,10 @@ h1 {
 }
 
 .text h3 {
-    color: #900C3F; /* Couleur du titre */
+    color: black; /* Couleur du titre */
     margin-bottom: 10px; /* Espace sous le titre */
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 .text p {
@@ -189,16 +191,17 @@ h1 {
 }
 
 .custom-link {
-    color: #900C3F; /* Couleur rouge vineux */
+    color: black; /* Couleur rouge vineux */
     text-decoration: underline; /* Lien souligné */
+    font-weight: bold;
 }
 
 .custom-link:hover {
-    color: #700C2F; /* Une couleur un peu plus foncée pour l'effet hover */
+    color: black; /* Une couleur un peu plus foncée pour l'effet hover */
 }
 
 h6 {
-    color: #900C3F; /* Applique la couleur rouge vineux */
+    color: black; /* Applique la couleur rouge vineux */
     text-decoration: underline; /* Souligne le texte */
     font-weight: bold; /* Rend le texte en gras pour plus de visibilité */
     margin-top: 20px; /* Espacement avant le titre pour plus de clarté */
