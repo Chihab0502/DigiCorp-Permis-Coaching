@@ -1,120 +1,45 @@
-/* CLASSIQUE */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;700&display=swap');
 
+.container
 
-
-
-/* FIN CLASSIQUE */
-
-#msform {
-    padding-top: 5%;
-    width: 1200px;
-    margin: 4% 9%;
-    text-align: center;
-    position: relative;
-}
-
-#msform fieldset {
-    background: white;
-    border: 0 none;
-    border-radius: 3px;
-    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
-    padding: 20px 30px;
-    box-sizing: border-box;
-    width: 80%;
-    margin: 0 10%;
-    position: relative;
-}
-/*Hide all except first fieldset*/
-#msform fieldset:not(:first-of-type) {
-    display: none;
-}
-
+/* Styles généraux pour le titre et les éléments de liste */
 .fs-title {
-    font-size: 25px;
-    text-transform: uppercase;
-    color: #2C3E50;
-    margin-bottom: 10px;
+    font-family: 'Roboto Serif', serif;
+    color: #900C3F;
 }
 
-
-.contact-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 45px;
-}
-
-.form-container {
-    width: 105%; /* Réglage de la largeur des formulaires */
-}
-
-.button {
+.custom-list .list-group-item {
+    font-size: 18px;
     position: relative;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-    padding-block: 0.5rem;
-    padding-inline: 1.25rem;
-    background-color: green;
-    border-radius: 9999px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffff;
-    gap: 10px;
-    font-weight: bold;
-    border: 3px solid #ffffff4d;
-    outline: none;
-    overflow: hidden;
-    font-size: 21px;
-    margin-left: 47%;
+    padding-left: 30px; /* Espace pour la flèche */
 }
 
-.icon {
-    width: 24px;
-    height: 24px;
-    transition: all 0.3s ease-in-out;
-}
-
-.button:hover {
-    transform: scale(1.05);
-    border-color: #fff9;
-}
-
-.button:hover .icon {
-    transform: translate(4px);
-}
-
-.button:hover::before {
-    animation: shine 1.5s ease-out infinite;
-}
-
-.button::before {
-    content: "";
+.custom-list .list-group-item::before {
+    content: "➤"; /* Symbole de flèche */
+    color: #900C3F;
     position: absolute;
-    width: 100px;
-    height: 100%;
-    background-image: linear-gradient(
-            120deg,
-            rgba(255, 255, 255, 0) 30%,
-            rgba(255, 255, 255, 0.8),
-            rgba(255, 255, 255, 0) 70%
-    );
-    top: 0;
-    left: -100px;
-    opacity: 0.6;
+    left: 10px;
+    font-size: 16px;
 }
 
-@keyframes shine {
-    0% {
-        left: -100px;
-    }
+/* Styles pour le bouton */
+.custom-button {
+    color: white;
+    background-color: #900C3F;
+    border-color: #900C3F;
+}
 
-    60% {
-        left: 100%;
-    }
+.custom-button:hover {
+    background-color: darken(#900C3F, 10%);
+    border-color: #900C3F;
+}
 
-    to {
-        left: 100%;
-    }
+/* Styles pour le grossissement au survol des éléments de la liste */
+.custom-list .list-group-item:hover {
+    transform: scale(1.05); /* Grossissement de 5% */
+    transition: transform 0.6s ease-in-out; /* Animation fluide du grossissement */
+    cursor: pointer; /* Change le curseur pour indiquer qu'un élément est interactif */
+    background-color: #f8f9fa; /* Change légèrement la couleur de fond au survol */
 }
 
 
