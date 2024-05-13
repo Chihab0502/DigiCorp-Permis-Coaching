@@ -205,11 +205,11 @@ div strong {
 }
 
 .ag-courses_item:nth-child(4n) .ag-courses-item_bg {
-    background-color: deeppink;
+    background-color: #900C3F;;
 }
 
 .ag-courses_item:nth-child(5n) .ag-courses-item_bg {
-    background-color: green;
+    background-color: #900C3F;;
 }
 
 
